@@ -8,6 +8,18 @@ import {
 } from './svg';
 
 const InfoPanel = () => {
+  const resumeDownloadHandler = async () => {
+    const response = await fetch("Otar's Resume.pdf");
+    const blob = await response.blob();
+    // Creating new object of PDF file
+    const fileURL = window.URL.createObjectURL(blob);
+    // Setting various property values
+    let alink = document.createElement('a');
+    alink.href = fileURL;
+    alink.download = "Otar's gitResume.pdf";
+    alink.click();
+  };
+
   return (
     <div className=" h-full w-2/12 bg-white flex flex-col items-center justify-between p-8 gap-3">
       {/* Profile image */}
@@ -138,8 +150,11 @@ const InfoPanel = () => {
 
       <div className="bg-gray-200 h-px w-full"></div>
 
-      <button className="flex items-center justify-center gap-2 bg-amber-400 p-3 w-full">
-        DOWNLOAD CV
+      <button
+        className="flex items-center justify-center gap-3 bg-amber-400 p-3 w-full text-sm font-medium"
+        onClick={resumeDownloadHandler}
+      >
+        DOWNLOAD RESUME
         <DownloadIcon />
       </button>
     </div>

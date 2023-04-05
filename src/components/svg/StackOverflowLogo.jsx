@@ -1,7 +1,11 @@
 import React from 'react';
 
 const StackOverflowLogo = () => (
-  <div className="bg-amber-400 p-2 rounded-full">
+  <a
+    className="bg-amber-400 p-2 rounded-full"
+    href="https://stackoverflow.com/users/12878671/otarius"
+    target="_blank"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-brand-stackoverflow"
@@ -21,7 +25,7 @@ const StackOverflowLogo = () => (
       <path d="M8.787 9.168l7.826 1.664" />
       <path d="M10.096 5.764l7.608 2.472" />
     </svg>
-  </div>
+  </a>
 );
 
 export default StackOverflowLogo;

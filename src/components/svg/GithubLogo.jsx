@@ -1,7 +1,11 @@
 import React from 'react';
 
 const GithubLogo = () => (
-  <div className="bg-amber-400 p-2 rounded-full">
+  <a
+    className="bg-amber-400 p-2 rounded-full"
+    href="https://github.com/mamatsa"
+    target='_blank'
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-brand-github-filled"
@@ -21,7 +25,7 @@ const GithubLogo = () => (
         fill="currentColor"
       />
     </svg>
-  </div>
+  </a>
 );
 
 export default GithubLogo;

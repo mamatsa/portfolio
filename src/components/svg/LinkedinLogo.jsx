@@ -1,7 +1,11 @@
 import React from 'react';
 
 const LinkedinLogo = () => (
-  <div className="bg-amber-400 p-2 rounded-full">
+  <a
+    className="bg-amber-400 p-2 rounded-full"
+    href="https://www.linkedin.com/in/otar-mamatsashvili/"
+    target="_blank"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-brand-linkedin"
@@ -21,7 +25,7 @@ const LinkedinLogo = () => (
       <path d="M12 16l0 -5" />
       <path d="M16 16v-3a2 2 0 0 0 -4 0" />
     </svg>
-  </div>
+  </a>
 );
 
 export default LinkedinLogo;
