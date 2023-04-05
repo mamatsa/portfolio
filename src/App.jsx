@@ -1,10 +1,10 @@
 import React from 'react';
-import Content from './components/Content';
+import { Content, InfoPanel } from './components';
 
 function App() {
   return (
     <div className=" flex h-screen w-screen justify-between items-stretch">
-      <div className=" h-full w-2/12 bg-white"></div>
+      <InfoPanel />
       <Content />
       <div className="h-full w-1/12 bg-gray-200"></div>
     </div>
