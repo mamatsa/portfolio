@@ -51,17 +51,17 @@ const InfoPanel = () => {
 
       {/* Personal info */}
       <div className="w-full flex flex-col gap-2">
-        <div className="w-full flex justify-between">
+        <div className="w-full flex justify-between items-center">
           <p className="bg-amber-400 p-1">Age:</p>
           <p>21</p>
         </div>
-        <div className="w-full flex justify-between">
+        <div className="w-full flex justify-between items-center">
           <p className="bg-amber-400 p-1">Address:</p>
           <p>Tbilisi, Georgia</p>
         </div>
-        <div className="w-full flex justify-between">
+        <div className="w-full flex justify-between items-center">
           <p className="bg-amber-400 p-1">Status:</p>
-          <p>Open to work</p>
+          <p className="text-green-500">Open to work</p>
         </div>
       </div>
       <div className="bg-gray-200 h-px w-full"></div>

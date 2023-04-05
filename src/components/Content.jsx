@@ -1,5 +1,6 @@
 import React from 'react';
 import { BannerPhoto } from '../assets';
+import { ArrowRight } from './svg';
 
 const Content = () => {
   return (
@@ -17,8 +18,9 @@ const Content = () => {
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
           </p>
-          <button className="bg-amber-500 px-6 py-3 rounded-md my-3">
+          <button className="bg-amber-400 px-6 py-3 rounded-md my-3 flex items-center gap-3">
             HIRE ME
+            <ArrowRight />
           </button>
         </div>
         <img src={BannerPhoto} alt="" />
