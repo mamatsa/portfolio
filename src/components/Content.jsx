@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banner, TechStack, WorkHistory } from './content-sections';
+import { Banner, TechStack, WorkHistory, Education } from './content-sections';
 
 const Content = () => {
   return (
@@ -7,6 +7,7 @@ const Content = () => {
       <Banner />
       <TechStack />
       <WorkHistory />
+      <Education />
     </div>
   );
 };
