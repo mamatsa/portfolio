@@ -1,5 +1,11 @@
 import React from 'react';
-import { Banner, TechStack, WorkHistory, Education } from './content-sections';
+import {
+  Banner,
+  TechStack,
+  WorkHistory,
+  Education,
+  Projects,
+} from './content-sections';
 
 const Content = () => {
   return (
@@ -8,6 +14,7 @@ const Content = () => {
       <TechStack />
       <WorkHistory />
       <Education />
+      <Projects />
     </div>
   );
 };
