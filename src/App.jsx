@@ -3,9 +3,10 @@ import { Content, InfoPanel, Navbar } from './components';
 
 function App() {
   return (
-    <div className=' flex h-screen w-screen justify-between items-stretch'>
+    <div className='bg-slate-200 flex h-full w-full justify-between items-stretch'>
       <InfoPanel />
       <Content />
+      {/* <div className='w-3/12 bg-gray-200'></div> */}
       <Navbar />
     </div>
   );

@@ -15,11 +15,25 @@
 }
 
 .banner {
-  background-image: url(src/assets/circle1.svg), url(src/assets/circle2.svg),
-    url(src/assets/circle1.svg), url(src/assets/circle2.svg),
-    url(src/assets/square1.svg), url(src/assets/square2.svg),
-    url(src/assets/triangle.svg);
+  background-image: url(src/assets/background/circle1.svg),
+    url(src/assets/background/circle2.svg),
+    url(src/assets/background/circle1.svg),
+    url(src/assets/background/circle2.svg),
+    url(src/assets/background/square1.svg),
+    url(src/assets/background/square2.svg),
+    url(src/assets/background/triangle.svg);
   background-repeat: no-repeat;
   background-position: left 4% top 6%, left 10% bottom 5%, left 60% bottom 20%,
     left 50% top 10%, left 35% bottom 30%, right 10% top 15%, right 2% bottom 8%;
+}
+
+/* hide scrollbar but allow scrolling */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }

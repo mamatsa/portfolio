@@ -21,7 +21,7 @@ const InfoPanel = () => {
   };
 
   return (
-    <div className=' h-full w-2/12 bg-white flex flex-col items-center justify-between p-8 gap-3'>
+    <div className='fixed h-full w-2/12 bg-white flex flex-col items-center justify-between p-8 gap-3'>
       {/* Profile image */}
       <div className='relative'>
         <img

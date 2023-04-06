@@ -12,7 +12,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className='h-full w-[120px] bg-slate-100 flex flex-col items-center justify-start py-10'>
+    <div className='fixed right-0 top-0 h-full w-[120px] bg-slate-100 flex flex-col items-center justify-start py-10'>
       <FontAwesomeIcon icon={faSun} size='xl' className='mb-40' />
 
       <div className='flex flex-col items-center justify center gap-6'>
