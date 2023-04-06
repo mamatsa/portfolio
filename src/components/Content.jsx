@@ -4,7 +4,7 @@ import { ArrowRight } from './svg';
 
 const Content = () => {
   return (
-    <div className="h-full w-9/12 px-10 bg-slate-100 flex items-start justify-center">
+    <div className="h-full w-full px-10 bg-slate-200 flex items-start justify-center">
       <section className="banner bg-white flex justify-between items-center px-16">
         <div>
           <h2 className="text-5xl font-bold leading-snug">
