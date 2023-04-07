@@ -18,9 +18,13 @@ import {
   SwaggerLogo,
 } from '../../assets';
 
-const TechStack = () => {
+const TechStack = ({ techStackRef }) => {
   return (
-    <section className='flex flex-col justify-start items-center'>
+    <section
+      id='tech-stack'
+      className='flex flex-col justify-start items-center'
+      ref={techStackRef}
+    >
       <h2 className='text-4xl font-bold mb-5'>My Tech Stack</h2>
       <p className='text-slate-400 text-lg'>
         Technologies I’ve been working with recently

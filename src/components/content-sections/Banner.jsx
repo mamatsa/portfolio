@@ -2,9 +2,13 @@ import React from 'react';
 import { BannerPhoto } from '../../assets';
 import { ArrowRight } from '../svg';
 
-const Banner = () => {
+const Banner = ({ homeRef }) => {
   return (
-    <section className='banner bg-white flex justify-between items-center px-16'>
+    <section
+      id='home'
+      className='banner bg-white flex justify-between items-center px-16'
+      ref={homeRef}
+    >
       <div>
         <h2 className='text-5xl font-bold leading-snug'>
           I'm Otar Mamatsashvili

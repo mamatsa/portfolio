@@ -2,9 +2,13 @@ import React from 'react';
 import { TributeScreen } from '../../assets';
 import Project from './Project';
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div
+      id='projects'
+      className='flex flex-col justify-center items-center'
+      ref={projectsRef}
+    >
       <h2 className='text-4xl font-bold mb-5'>Projects</h2>
       <p className='text-slate-400 text-lg'>Things I’ve built so far</p>
 

@@ -6,9 +6,13 @@ import {
   faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 
-const WorkHistory = () => {
+const WorkHistory = ({ workHistoryRef }) => {
   return (
-    <div className='w-full flex flex-col items-center justify-center gap-5'>
+    <div
+      id='work-history'
+      className='w-full flex flex-col items-center justify-center gap-5'
+      ref={workHistoryRef}
+    >
       <h2 className='text-4xl font-bold mb-5'>Work History</h2>
       <div className='bg-white w-full p-16'>
         {/* 1 */}

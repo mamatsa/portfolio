@@ -2,9 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   return (
-    <div className='flex w-full gap-[2%]'>
+    <div id='contact' className='flex w-full gap-[2%]' ref={contactRef}>
       <div className='w-[61%] flex flex-col justify-between'>
         <h2 className='text-4xl font-bold mb-8'>Leave me a message</h2>
         <form className=' p-10 bg-white flex flex-col gap-4'>

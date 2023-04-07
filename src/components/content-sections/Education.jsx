@@ -6,9 +6,13 @@ import {
   faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Education = () => {
+const Education = ({ educationRef }) => {
   return (
-    <div className='w-full flex flex-col items-center justify-center gap-5'>
+    <div
+      id='education'
+      className='w-full flex flex-col items-center justify-center gap-5'
+      ref={educationRef}
+    >
       <h2 className='text-4xl font-bold mb-5'>Education</h2>
       <div className='bg-white w-full p-16'>
         {/* 1 */}
