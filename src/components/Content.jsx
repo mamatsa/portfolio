@@ -5,6 +5,7 @@ import {
   WorkHistory,
   Education,
   Projects,
+  Contact,
 } from './content-sections';
 
 const Content = () => {
@@ -15,6 +16,7 @@ const Content = () => {
       <WorkHistory />
       <Education />
       <Projects />
+      <Contact />
     </div>
   );
 };
