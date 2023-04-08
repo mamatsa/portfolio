@@ -36,7 +36,9 @@ function App() {
         <Education educationRef={educationRef} />
         <Projects projectsRef={projectsRef} />
         <Contact contactRef={contactRef} />
-        <div className='w-full h-9'></div>
+        <div className='w-full text-xl py-3 bg-amber-400 flex justify-center items-center'>
+          The End
+        </div>
       </div>
 
       <Navbar
