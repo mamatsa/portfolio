@@ -1,6 +1,7 @@
 import React from 'react';
 import { BannerPhoto } from '../../assets';
-import { ArrowRight } from '../svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Banner = ({ homeRef }) => {
   return (
@@ -23,7 +24,7 @@ const Banner = ({ homeRef }) => {
         </p>
         <button className='bg-amber-400 px-6 py-3 rounded-md my-3 flex items-center gap-3'>
           HIRE ME
-          <ArrowRight />
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
       <img src={BannerPhoto} alt='' />

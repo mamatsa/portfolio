@@ -1,11 +1,12 @@
 import React from 'react';
 import { ProfilePhoto } from '../assets';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import {
-  GithubLogo,
-  LinkedinLogo,
-  StackOverflowLogo,
-  DownloadIcon,
-} from './svg';
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from '@fortawesome/free-brands-svg-icons';
 
 const InfoPanel = () => {
   const resumeDownloadHandler = async () => {
@@ -41,9 +42,27 @@ const InfoPanel = () => {
 
         {/* Social links */}
         <div className='flex gap-3 mt-4'>
-          <GithubLogo />
-          <LinkedinLogo />
-          <StackOverflowLogo />
+          <a href='https://github.com/mamatsa' target='_blank'>
+            <FontAwesomeIcon
+              icon={faGithub}
+              size='xl'
+              className='bg-amber-400 p-2 rounded-full'
+            />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/otar-mamatsashvili/'
+            target='_blank'
+            className='bg-amber-400 w-10 h-10 rounded-full flex justify-center items-center'
+          >
+            <FontAwesomeIcon icon={faLinkedin} size='xl' />
+          </a>
+          <a
+            href='https://stackoverflow.com/users/12878671/otarius'
+            target='_blank'
+            className='bg-amber-400 w-10 h-10 rounded-full flex justify-center items-center'
+          >
+            <FontAwesomeIcon icon={faStackOverflow} size='xl' />
+          </a>
         </div>
       </div>
 
@@ -73,7 +92,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>Georgian</p>
           <p className='absolute top-0 right-0 text-gray-500'>Native</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '100%' }}
@@ -85,7 +104,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>English</p>
           <p className='absolute top-0 right-0 text-gray-500'>B2</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '75%' }}
@@ -103,7 +122,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>HTML/CSS</p>
           <p className='absolute top-0 right-0 text-gray-500'>90%</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '90%' }}
@@ -115,7 +134,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>Javascript</p>
           <p className='absolute top-0 right-0 text-gray-500'>80%</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '80%' }}
@@ -127,7 +146,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>Typescript</p>
           <p className='absolute top-0 right-0 text-gray-500'>70%</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '70%' }}
@@ -139,7 +158,7 @@ const InfoPanel = () => {
           <p className='text-gray-500'>MongoDB</p>
           <p className='absolute top-0 right-0 text-gray-500'>70%</p>
           {/* Progressbar */}
-          <div class='w-full bg-gray-200 rounded-full'>
+          <div className='w-full bg-gray-200 rounded-full'>
             <div
               className='bg-amber-400 p-0.5 rounded-full'
               style={{ width: '70%' }}
@@ -151,11 +170,11 @@ const InfoPanel = () => {
       <div className='bg-gray-200 h-px w-full'></div>
 
       <button
-        className='flex items-center justify-center gap-3 bg-amber-400 p-3 w-full text-sm font-medium'
+        className='flex items-center justify-center gap-2 bg-amber-400 p-3 w-full text-sm font-medium'
         onClick={resumeDownloadHandler}
       >
         DOWNLOAD RESUME
-        <DownloadIcon />
+        <FontAwesomeIcon icon={faDownload} />
       </button>
     </div>
   );
