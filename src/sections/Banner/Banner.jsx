@@ -1,5 +1,6 @@
 import React from 'react';
 import { BannerPhoto } from 'src/assets';
+import { Button } from 'src/components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,15 +18,12 @@ const Banner = ({ homeRef }) => {
         <h2 className='text-5xl font-bold leading-snug'>
           <span className=' text-amber-400'>Front-End</span> Developer
         </h2>
-        <p className='text-gray-400 my-5 w-3/5'>
+        <p className='text-gray-400 my-6 w-3/5'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
           feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
           lectus.
         </p>
-        <button className='bg-amber-400 px-6 py-3 rounded-md my-3 flex items-center gap-3'>
-          HIRE ME
-          <FontAwesomeIcon icon={faArrowRight} />
-        </button>
+        <Button text='HIRE ME' icon={faArrowRight} />
       </div>
       <img src={BannerPhoto} alt='' />
     </section>

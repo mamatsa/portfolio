@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
+import { Input, ContactCard } from './components';
 
 const Contact = ({ contactRef, messageSendHandler }) => {
   const form = useRef();
@@ -9,7 +10,6 @@ const Contact = ({ contactRef, messageSendHandler }) => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
-      throw Error();
       await emailjs.sendForm(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
@@ -27,6 +27,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
 
   return (
     <div id='contact' className='flex w-full gap-[2%]' ref={contactRef}>
+      {/* Contact form side */}
       <div className='w-[61%] flex flex-col justify-between'>
         <h2 className='text-4xl font-bold mb-8'>Leave me a message</h2>
         <form
@@ -34,53 +35,16 @@ const Contact = ({ contactRef, messageSendHandler }) => {
           onSubmit={(e) => sendEmail(e)}
           ref={form}
         >
-          <div className='flex flex-col items-start justify-center'>
-            <label htmlFor='name' className='text-slate-600 mb-1 text-lg'>
-              Your Name (Required)
-            </label>
-            <input
-              type='text'
-              required
-              id='name'
-              name='name'
-              minLength={3}
-              className='bg-slate-200 w-full px-5 py-3'
-            />
-          </div>
-          <div className='flex flex-col items-start justify-center'>
-            <label htmlFor='email' className='text-slate-600 mb-1 text-lg'>
-              Your Email (Required)
-            </label>
-            <input
-              type='email'
-              required
-              id='email'
-              name='email'
-              className='bg-slate-200 w-full px-5 py-3'
-            />
-          </div>
-          <div className='flex flex-col items-start justify-center'>
-            <label htmlFor='subject' className='text-slate-600 mb-1 text-lg'>
-              Subject
-            </label>
-            <input
-              type='text'
-              id='subject'
-              name='subject'
-              className='bg-slate-200 w-full px-5 py-3'
-            />
-          </div>
-          <div className='flex flex-col items-start justify-center'>
-            <label htmlFor='message' className='text-slate-600 mb-1 text-lg'>
-              Your Message
-            </label>
-            <textarea
-              name='message'
-              id='message'
-              rows='8'
-              className='bg-slate-200 w-full px-5 py-3'
-            ></textarea>
-          </div>
+          <Input id='name' type='text' label='Your Name (Required)' />
+          <Input id='email' type='email' label='Your Email (Required)' />
+          <Input id='subject' type='text' label='Subject' />
+          <Input
+            id='message'
+            type='text'
+            label='Your Message'
+            textarea={true}
+          />
+
           <button
             type='submit'
             className='px-4 py-2 bg-amber-400 place-self-start mt-4'
@@ -90,51 +54,29 @@ const Contact = ({ contactRef, messageSendHandler }) => {
         </form>
       </div>
 
+      {/* Contact information side */}
       <div className='w-[37%] flex flex-col'>
         <h2 className='text-4xl font-bold mb-8'>Contact information</h2>
         <div className='flex flex-col justify-between h-full'>
-          <div className='w-full flex flex-col items-center p-8 bg-white'>
-            <FontAwesomeIcon
-              icon={faMap}
-              className='mr-2 bg-amber-400 p-4 rounded-full mb-7'
-            />
-            <div className='w-full flex justify-between items-center mb-3 '>
-              <p className='text-lg text-slate-600 '>Country:</p>
-              <p className='text-slate-600'>Georgia</p>
-            </div>
-            <div className='w-full flex justify-between items-center mb-3'>
-              <p className='text-lg text-slate-600 '>City:</p>
-              <p className='text-slate-600'>Tbilisi</p>
-            </div>
-            <div className='w-full flex justify-between items-center'>
-              <p className='text-lg text-slate-600 '>Street:</p>
-              <p className='text-slate-600'>Dadiani</p>
-            </div>
-          </div>
-          <div className='w-full flex flex-col items-center p-8 bg-white'>
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className='mr-2 bg-amber-400 p-4 rounded-full mb-7'
-            />
-            <div className='w-full flex justify-between items-center mb-3'>
-              <p className='text-lg text-slate-600 '>Email:</p>
-              <p className='text-slate-600'>otar.mamatsashvili@gmail.com</p>
-            </div>
-            <div className='w-full flex justify-between items-center'>
-              <p className='text-lg text-slate-600 '>Discord:</p>
-              <p className='text-slate-600'>Otar#7677</p>
-            </div>
-          </div>
-          <div className='w-full flex flex-col items-center p-8 bg-white'>
-            <FontAwesomeIcon
-              icon={faPhone}
-              className='mr-2 bg-amber-400 p-4 rounded-full mb-7'
-            />
-            <div className='w-full flex justify-between items-center'>
-              <p className='text-lg text-slate-600 '>Phone Number:</p>
-              <p className='text-slate-600'>+995598561151</p>
-            </div>
-          </div>
+          <ContactCard
+            icon={faMap}
+            contacts={[
+              { label: 'Country:', value: 'Georgia' },
+              { label: 'City:', value: 'Tbilisi' },
+              { label: 'Street:', value: 'Dadiani' },
+            ]}
+          />
+          <ContactCard
+            icon={faEnvelope}
+            contacts={[
+              { label: 'Email:', value: 'otar.mamatsashvili@gmail.com' },
+              { label: 'Discord:', value: 'Otar#7677' },
+            ]}
+          />
+          <ContactCard
+            icon={faPhone}
+            contacts={[{ label: 'Phone Number:', value: '+995598561151' }]}
+          />
         </div>
       </div>
     </div>

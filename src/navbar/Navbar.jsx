@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavItem } from './components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSun,
@@ -23,64 +24,32 @@ const Navbar = ({
       <FontAwesomeIcon icon={faSun} size='xl' className='mb-40' />
 
       <nav className='flex flex-col items-center justify center gap-6'>
-        <a
-          href='#home'
-          className={`p-3 rounded-full ${
-            homeIsInViewport ? 'bg-amber-400 ' : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faHouse} size='xl' />
-        </a>
-        <a
+        <NavItem href='#home' icon={faHouse} isInViewport={homeIsInViewport} />
+        <NavItem
           href='#tech-stack'
-          className={`p-3 rounded-full ${
-            techStackIsInViewport && !homeIsInViewport
-              ? 'bg-amber-400 '
-              : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faLayerGroup} size='xl' />
-        </a>
-        <a
+          icon={faLayerGroup}
+          isInViewport={techStackIsInViewport && !homeIsInViewport}
+        />
+        <NavItem
           href='#work-history'
-          className={`p-3 rounded-full ${
-            workHistoryIsInViewport && !techStackIsInViewport
-              ? 'bg-amber-400 '
-              : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faBriefcase} size='xl' />
-        </a>
-        <a
+          icon={faBriefcase}
+          isInViewport={workHistoryIsInViewport && !techStackIsInViewport}
+        />
+        <NavItem
           href='#education'
-          className={`p-3 rounded-full ${
-            educationIsInViewport && !workHistoryIsInViewport
-              ? 'bg-amber-400 '
-              : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faUserGraduate} size='xl' />
-        </a>
-        <a
+          icon={faUserGraduate}
+          isInViewport={educationIsInViewport && !workHistoryIsInViewport}
+        />
+        <NavItem
           href='#projects'
-          className={`p-3 rounded-full ${
-            projectsIsInViewport && !educationIsInViewport
-              ? 'bg-amber-400 '
-              : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faFeatherPointed} size='xl' />
-        </a>
-        <a
+          icon={faFeatherPointed}
+          isInViewport={projectsIsInViewport && !educationIsInViewport}
+        />
+        <NavItem
           href='#contact'
-          className={`p-3 rounded-full ${
-            contactIsInViewport && !projectsIsInViewport
-              ? 'bg-amber-400 '
-              : 'bg-slate-200 '
-          }`}
-        >
-          <FontAwesomeIcon icon={faMessage} size='xl' />
-        </a>
+          icon={faMessage}
+          isInViewport={contactIsInViewport && !projectsIsInViewport}
+        />
       </nav>
     </div>
   );
