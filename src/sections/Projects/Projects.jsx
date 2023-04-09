@@ -1,6 +1,6 @@
 import React from 'react';
 import { TributeScreen } from '../../assets';
-import Project from './Project';
+import { Project } from './components';
 
 const Projects = ({ projectsRef }) => {
   return (

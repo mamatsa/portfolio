@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react';
+import Navbar from './navbar';
+import SidePanel from './side-panel';
 import {
   Banner,
   TechStack,
@@ -6,9 +8,8 @@ import {
   Education,
   Projects,
   Contact,
-} from './components/content-sections';
-import useIsInViewport from './hooks/useIntersection';
-import { InfoPanel, Navbar } from './components';
+} from './sections';
+import { useIsInViewport } from './hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div className='bg-slate-200 flex h-full w-full justify-between items-stretch'>
-      <InfoPanel />
+      <SidePanel />
 
       <div className='relative mr-32 ml-80 h-full w-full px-10 bg-slate-200'>
         {successMessage && (

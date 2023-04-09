@@ -8,7 +8,7 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 
-const InfoPanel = () => {
+const SidePanel = () => {
   const resumeDownloadHandler = async () => {
     const response = await fetch("Otar's Resume.pdf");
     const blob = await response.blob();
@@ -180,4 +180,4 @@ const InfoPanel = () => {
   );
 };
 
-export default InfoPanel;
+export default SidePanel;
