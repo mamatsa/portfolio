@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 
-const Contact = ({ contactRef }) => {
+const Contact = ({ contactRef, messageSendHandler }) => {
   const form = useRef();
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
     try {
+      throw Error();
       await emailjs.sendForm(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
@@ -18,8 +18,10 @@ const Contact = ({ contactRef }) => {
       );
 
       e.target.reset();
+      messageSendHandler(true);
     } catch (err) {
       console.log(err);
+      messageSendHandler(false);
     }
   };
 
