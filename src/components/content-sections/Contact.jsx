@@ -1,13 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ contactRef }) => {
+  const form = useRef();
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      );
+
+      e.target.reset();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div id='contact' className='flex w-full gap-[2%]' ref={contactRef}>
       <div className='w-[61%] flex flex-col justify-between'>
         <h2 className='text-4xl font-bold mb-8'>Leave me a message</h2>
-        <form className=' p-10 bg-white flex flex-col gap-4'>
+        <form
+          className=' p-10 bg-white flex flex-col gap-4'
+          onSubmit={(e) => sendEmail(e)}
+          ref={form}
+        >
           <div className='flex flex-col items-start justify-center'>
             <label htmlFor='name' className='text-slate-600 mb-1 text-lg'>
               Your Name (Required)
