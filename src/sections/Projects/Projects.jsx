@@ -1,5 +1,5 @@
 import React from 'react';
-import { TributeScreen } from '../../assets';
+import { TributeScreen } from 'src/assets';
 import { Project } from './components';
 
 const Projects = ({ projectsRef }) => {

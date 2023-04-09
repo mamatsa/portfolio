@@ -1,5 +1,5 @@
 import React from 'react';
-import { BannerPhoto } from '../../assets';
+import { BannerPhoto } from 'src/assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

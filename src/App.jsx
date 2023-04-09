@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import Navbar from './navbar';
-import SidePanel from './side-panel';
+import Navbar from 'src/navbar';
+import SidePanel from 'src/side-panel';
 import {
   Banner,
   TechStack,
@@ -8,8 +8,8 @@ import {
   Education,
   Projects,
   Contact,
-} from './sections';
-import { useIsInViewport } from './hooks';
+} from 'src/sections';
+import { useIsInViewport } from 'src/hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 

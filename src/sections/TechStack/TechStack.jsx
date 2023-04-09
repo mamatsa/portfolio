@@ -16,7 +16,7 @@ import {
   GithubLogo,
   CypressLogo,
   SwaggerLogo,
-} from '../../assets';
+} from 'src/assets';
 
 const TechStack = ({ techStackRef }) => {
   return (
