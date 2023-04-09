@@ -37,10 +37,10 @@ function App() {
   const contactIsInViewport = useIsInViewport(contactRef);
 
   return (
-    <div className='bg-slate-200 flex h-full w-full justify-between items-stretch'>
+    <div className='bg-slate-200 h-full w-full flex justify-between items-stretch'>
       <SidePanel />
 
-      <div className='relative mr-32 ml-80 h-full w-full px-10 bg-slate-200'>
+      <div className='relative h-full w-full bg-slate-200 xl:mr-32 xl:ml-80 xl:px-10'>
         {successMessage && (
           <div className='sticky top-0 w-full'>
             <p
@@ -59,7 +59,7 @@ function App() {
             />
           </div>
         )}
-        <div className='space-y-32'>
+        <div className='space-y-16 xl:space-y-32'>
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
           <WorkHistory workHistoryRef={workHistoryRef} />
@@ -69,7 +69,7 @@ function App() {
             contactRef={contactRef}
             messageSendHandler={messageSendHandler}
           />
-          <div className='w-full text-xl py-3 bg-amber-400 flex justify-center items-center'>
+          <div className='w-full text py-3 bg-amber-400 flex justify-center items-center xl:text-xl'>
             The End
           </div>
         </div>

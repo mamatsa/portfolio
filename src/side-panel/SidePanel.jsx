@@ -22,7 +22,7 @@ const SidePanel = () => {
   };
 
   return (
-    <div className='fixed h-full w-2/12 bg-white flex flex-col items-center justify-between p-8 gap-3'>
+    <div className='fixed h-full w-2/12 bg-white hidden flex-col items-center justify-between p-8 gap-3 sm:flex '>
       <ProfilePicture />
 
       {/* Name, position */}

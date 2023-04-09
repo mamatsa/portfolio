@@ -12,11 +12,11 @@ const Project = ({
   siteLink,
 }) => {
   return (
-    <div className=' w-[31%] bg-white rounded-lg'>
+    <div className='bg-white rounded-lg md:w-[31%]'>
       <img src={image} alt='name' className='w-full rounded-t-lg' />
-      <div className='p-8'>
-        <h3 className='text-2xl mb-4'>{name}</h3>
-        <p className='font-light text-lg mb-5'>{description}</p>
+      <div className='p-3 md:p-8'>
+        <h3 className='text-lg mb-4 md:text-2xl'>{name}</h3>
+        <p className='font-light text mb-5 md:text-lg'>{description}</p>
         <p>
           Tech stack: <span className='text-sm font-light'>{techStack}</span>
         </p>

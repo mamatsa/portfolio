@@ -26,12 +26,18 @@ const Contact = ({ contactRef, messageSendHandler }) => {
   };
 
   return (
-    <div id='contact' className='flex w-full gap-[2%]' ref={contactRef}>
+    <div
+      id='contact'
+      className='flex flex-col-reverse w-full gap-[2%] md:flex-row'
+      ref={contactRef}
+    >
       {/* Contact form side */}
-      <div className='w-[61%] flex flex-col justify-between'>
-        <h2 className='text-4xl font-bold mb-8'>Leave me a message</h2>
+      <div className='flex flex-col justify-between mt-4 md:mt-0 md:w-[61%] '>
+        <h2 className='text-2xl font-bold mb-1 mx-auto md:text-3xl md:mb-8 2xl:text-4xl'>
+          Leave me a message
+        </h2>
         <form
-          className=' p-10 bg-white flex flex-col gap-4'
+          className='p-5 bg-white flex flex-col gap-4 md:p-10'
           onSubmit={(e) => sendEmail(e)}
           ref={form}
         >
@@ -47,7 +53,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
 
           <button
             type='submit'
-            className='px-4 py-2 bg-amber-400 place-self-start mt-4'
+            className='px-4 py-2 bg-amber-400 place-self-start mt-4 w-full md:w-auto'
           >
             SEND MESSAGE
           </button>
@@ -55,9 +61,11 @@ const Contact = ({ contactRef, messageSendHandler }) => {
       </div>
 
       {/* Contact information side */}
-      <div className='w-[37%] flex flex-col'>
-        <h2 className='text-4xl font-bold mb-8'>Contact information</h2>
-        <div className='flex flex-col justify-between h-full'>
+      <div className='flex flex-col md:w-[37%] '>
+        <h2 className='text-2xl font-bold mx-auto mb-2 md:text-3xl md:mb-8 2xl:text-4xl'>
+          Contact information
+        </h2>
+        <div className='flex flex-col justify-between gap-3 h-full'>
           <ContactCard
             icon={faMap}
             contacts={[

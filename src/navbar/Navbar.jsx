@@ -20,7 +20,7 @@ const Navbar = ({
   projectsIsInViewport,
 }) => {
   return (
-    <div className='fixed right-0 top-0 h-full w-[120px] bg-slate-100 flex flex-col items-center justify-start py-10'>
+    <div className='fixed right-0 top-0 h-full w-[120px] bg-slate-100  flex-col items-center justify-start py-10 hidden xl:flex'>
       <FontAwesomeIcon icon={faSun} size='xl' className='mb-40' />
 
       <nav className='flex flex-col items-center justify center gap-6'>

@@ -11,14 +11,16 @@ const Education = ({ educationRef }) => {
   return (
     <div
       id='education'
-      className='w-full flex flex-col items-center justify-center gap-5'
+      className='w-full flex flex-col items-center justify-center'
       ref={educationRef}
     >
-      <h2 className='text-4xl font-bold mb-5'>Education</h2>
-      <div className='bg-white w-full p-16'>
+      <h2 className='text-2xl font-bold mb-5 xl:text-4xl xl:mb-10'>
+        Education
+      </h2>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
         <EducationItem
           title='BACHELOR OF ENGINEERING IN INFORMATICS'
-          school='BTU • Business And Technology University'
+          school='BTU'
           place='Tbilisi'
           period='Apr 2022 - Sep 2022'
           details={[
@@ -28,7 +30,7 @@ const Education = ({ educationRef }) => {
           ]}
         />
 
-        <hr className='my-10' />
+        <hr className='my-5 lg:my-10' />
 
         <EducationItem
           title='School Graduate'

@@ -5,14 +5,16 @@ const WorkHistory = ({ workHistoryRef }) => {
   return (
     <div
       id='work-history'
-      className='w-full flex flex-col items-center justify-center gap-5'
+      className='w-full flex flex-col items-center justify-center'
       ref={workHistoryRef}
     >
-      <h2 className='text-4xl font-bold mb-5'>Work History</h2>
-      <div className='bg-white w-full p-16'>
+      <h2 className='text-2xl font-bold mb-5 xl:text-4xl xl:mb-10'>
+        Work History
+      </h2>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
         <JobItem
           title='Full Stack Developer'
-          company='redberry'
+          company='Redberry'
           place='Tbilisi'
           period='Apr 2022 - Sep 2022'
           workHours='Full Time'
@@ -23,11 +25,11 @@ const WorkHistory = ({ workHistoryRef }) => {
           ]}
         />
 
-        <hr className='my-10' />
+        <hr className='my-5 xl:my-10' />
 
         <JobItem
           title='Junior Front End Developer'
-          company='Digital Landowners Society'
+          company='DLS'
           place='Tbilisi'
           period='Jan 2022 - Mar 2022'
           workHours='Full Time'

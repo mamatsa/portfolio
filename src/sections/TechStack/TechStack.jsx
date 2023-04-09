@@ -25,67 +25,69 @@ const TechStack = ({ techStackRef }) => {
       className='flex flex-col justify-start items-center'
       ref={techStackRef}
     >
-      <h2 className='text-4xl font-bold mb-5'>My Tech Stack</h2>
-      <p className='text-slate-400 text-lg'>
+      <h2 className='text-2xl font-bold mb-2 xl:text-4xl xl:mb-5'>
+        My Tech Stack
+      </h2>
+      <p className='text-slate-400  xl:text-lg'>
         Technologies I’ve been working with recently
       </p>
-      <div className='flex flex-wrap justify-center items-center my-10 gap-5'>
+      <div className='flex flex-wrap justify-center items-center my-5 gap-5 xl:my-10'>
         <a
           href='https://developer.mozilla.org/en-US/docs/Web/HTML'
           target='_blank'
         >
-          <img src={HTMLLogo} alt='html' />
+          <img src={HTMLLogo} alt='html' className='w-16 xl:w-32' />
         </a>
         <a
           href='https://developer.mozilla.org/en-US/docs/Web/CSS'
           target='_blank'
         >
-          <img src={CSSLogo} alt='css' />
+          <img src={CSSLogo} alt='css' className='w-16 xl:w-32' />
         </a>
         <a
           href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
           target='_blank'
         >
-          <img src={JSLogo} alt='js' />
+          <img src={JSLogo} alt='js' className='w-16 xl:w-32' />
         </a>
         <a href='https://www.typescriptlang.org/' target='_blank'>
-          <img src={TSLogo} alt='ts' />
+          <img src={TSLogo} alt='ts' className='w-16 xl:w-32' />
         </a>
         <a href='https://react.dev/' target='_blank'>
-          <img src={ReactLogo} alt='react' />
+          <img src={ReactLogo} alt='react' className='w-16 xl:w-32' />
         </a>
         <a href='https://nodejs.org/en' target='_blank'>
-          <img src={NodeLogo} alt='node' />
+          <img src={NodeLogo} alt='node' className='w-16 xl:w-32' />
         </a>
         <a href='https://expressjs.com/' target='_blank'>
-          <img src={ExpressLogo} alt='express' />
+          <img src={ExpressLogo} alt='express' className='w-16 xl:w-32' />
         </a>
         <a href='https://www.mongodb.com/' target='_blank'>
-          <img src={MongoLogo} alt='mongo' />
+          <img src={MongoLogo} alt='mongo' className='w-16 xl:w-32' />
         </a>
         <a href='https://tailwindcss.com/' target='_blank'>
-          <img src={TailwindLogo} alt='tailwind' />
+          <img src={TailwindLogo} alt='tailwind' className='w-16 xl:w-32' />
         </a>
         <a href='https://git-scm.com/' target='_blank'>
-          <img src={GitLogo} alt='git' />
+          <img src={GitLogo} alt='git' className='w-16 xl:w-32' />
         </a>
         <a href='https://github.com/' target='_blank'>
-          <img src={GithubLogo} alt='github' />
+          <img src={GithubLogo} alt='github' className='w-16 xl:w-32' />
         </a>
         <a href='https://www.linux.org/' target='_blank'>
-          <img src={LinuxLogo} alt='linux' />
+          <img src={LinuxLogo} alt='linux' className='w-16 xl:w-32' />
         </a>
         <a href='https://code.visualstudio.com/' target='_blank'>
-          <img src={VscodeLogo} alt='vscode' />
+          <img src={VscodeLogo} alt='vscode' className='w-16 xl:w-32' />
         </a>
         <a href='https://www.figma.com/' target='_blank'>
-          <img src={FigmaLogo} alt='figma' />
+          <img src={FigmaLogo} alt='figma' className='w-16 xl:w-32' />
         </a>
         <a href='https://swagger.io/' target='_blank'>
-          <img src={SwaggerLogo} alt='swagger' />
+          <img src={SwaggerLogo} alt='swagger' className='w-16 xl:w-32' />
         </a>
         <a href='https://www.cypress.io/' target='_blank'>
-          <img src={CypressLogo} alt='cypress' />
+          <img src={CypressLogo} alt='cypress' className='w-16 xl:w-32' />
         </a>
       </div>
     </section>
