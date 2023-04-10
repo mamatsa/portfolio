@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import { Input, ContactCard } from './components';

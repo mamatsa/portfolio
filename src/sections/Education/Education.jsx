@@ -1,10 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBuilding,
-  faCalendar,
-  faLocationDot,
-} from '@fortawesome/free-solid-svg-icons';
 import { EducationItem } from './components';
 
 const Education = ({ educationRef }) => {

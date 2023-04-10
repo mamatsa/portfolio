@@ -1,7 +1,6 @@
 import React from 'react';
 import { BannerPhoto } from 'src/assets';
 import { Button } from 'src/components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Banner = ({ homeRef }) => {
