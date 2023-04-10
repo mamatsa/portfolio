@@ -32,37 +32,39 @@ const SidePanel = () => {
         onClick={() => setPanelIsOpen(false)}
       ></div>
       <button
-        className={`fixed z-30 bottom-[20%] -left-11 rotate-90 bg-amber-400 px-4 py-3 text-sm rounded-t-xl xl:hidden ${
+        className={`fixed z-30 bottom-[20%] -left-14 rotate-90 bg-amber-200 px-4 py-2 text-sm font-light rounded-t-xl border-[1px] border-amber-400 xl:hidden ${
           panelIsOpen && 'hidden'
         }`}
         onClick={() => setPanelIsOpen(true)}
       >
-        Resume Panel
+        RESUME PANEL
       </button>
       <div
-        className={`fixed z-20 h-full w-2/12 bg-white flex-col items-center justify-between p-8 gap-3 xl:flex ${
+        className={`fixed z-20 h-full w-2/12 bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex ${
           panelIsOpen ? 'flex w-4/5 xl:w-2/12' : 'hidden'
         }`}
       >
         <button
-          className={`absolute z-30 bottom-[20%] -right-20 rotate-90 bg-amber-400 px-4 py-2 text-sm rounded-t-xl xl:hidden ${
+          className={`absolute z-30 bottom-[20%] -right-[90px] rotate-90 bg-amber-400 px-4 py-2 text-sm font-light rounded-t-xl   xl:hidden ${
             !panelIsOpen && 'hidden'
           }`}
           onClick={() => setPanelIsOpen(false)}
         >
-          Resume Panel
+          PRESUME PANEL
         </button>
         <ProfilePicture />
 
         {/* Name, position */}
         <div className='flex flex-col items-center'>
-          <p className='text-lg font-medium text-amber-950 mb-1'>
+          <h3 className='font-medium text-amber-950 mb-1 xl:text-lg'>
             Otar Mamatsashvili
+          </h3>
+          <p className='text-xs text-gray-500 xl:text-sm'>
+            Front-End Developer
           </p>
-          <p className='text-sm text-gray-500'>Front-End Developer</p>
 
           {/* Social links */}
-          <div className='flex gap-3 mt-4'>
+          <div className='flex gap-1 mt-1 xl:mt-4 xl:gap-3'>
             <MediaLink href='https://github.com/mamatsa' icon={faGithub} />
             <MediaLink
               href='https://www.linkedin.com/in/otar-mamatsashvili/'
@@ -92,7 +94,7 @@ const SidePanel = () => {
 
         {/* Languages */}
         <div className='w-full place-self-start'>
-          <h3 className='text-lg font-medium'>Languages</h3>
+          <h3 className='font-medium xl:text-lg'>Languages</h3>
           <ProgressBar title='Georgian' progressTitle='Native' progress='100' />
           <ProgressBar title='English' progressTitle='B2' progress='75' />
         </div>
@@ -101,7 +103,7 @@ const SidePanel = () => {
 
         {/* Skills */}
         <div className='w-full place-self-start'>
-          <h3 className='text-lg font-medium'>Main Skills</h3>
+          <h3 className='font-medium xl:text-lg'>Main Skills</h3>
           <ProgressBar title='HTML/CSS' progressTitle='90%' progress='90' />
           <ProgressBar title='Javascript' progressTitle='80%' progress='80' />
           <ProgressBar title='Typescript' progressTitle='70%' progress='70' />

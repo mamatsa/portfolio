@@ -7,9 +7,9 @@ const ProfileImage = () => {
       <img
         src={ProfilePhoto}
         alt='Image'
-        className='rounded-full max-w-[150px]'
+        className='rounded-full w-24 xl:w-[150px]'
       />
-      <div className='absolute bottom-2 right-5 w-4 h-4 bg-green-500 rounded-full drop-shadow-md'></div>
+      <div className='absolute h-3 w-3 bottom-2 right-2 bg-green-500 rounded-full drop-shadow-md xl:w-4 xl:h-4 xl:bottom-2 xl:right-5'></div>
     </div>
   );
 };

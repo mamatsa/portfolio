@@ -6,7 +6,7 @@ const MediaLink = (props) => {
     <a
       href={props.href}
       target='_blank'
-      className='bg-amber-400 w-10 h-10 rounded-full flex justify-center items-center'
+      className='bg-amber-400 w-10 h-10 rounded-full flex justify-center items-center scale-75 xl:scale-100'
     >
       <FontAwesomeIcon
         icon={props.icon}
