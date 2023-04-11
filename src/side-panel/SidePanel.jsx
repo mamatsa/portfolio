@@ -41,7 +41,7 @@ const SidePanel = () => {
       </button>
       <div
         className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex ${
-          panelIsOpen ? 'flex w-4/5 xl:w-2/12' : 'hidden'
+          panelIsOpen ? 'flex xl:w-2/12' : 'hidden'
         }`}
       >
         <button
