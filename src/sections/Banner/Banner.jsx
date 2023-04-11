@@ -7,7 +7,7 @@ const Banner = ({ homeRef }) => {
   return (
     <section
       id='home'
-      className='banner bg-white flex justify-between items-center px-6 py-12 md:px-12 2xl:px-16 xl:py-6'
+      className='banner bg-white flex justify-between items-center px-6 pt-12 pb-12 md:px-12 2xl:px-16 lg:pb-0 lg:pt-6'
       ref={homeRef}
     >
       <div>
@@ -24,7 +24,7 @@ const Banner = ({ homeRef }) => {
         </p>
         <Button text='HIRE ME' icon={faArrowRight} />
       </div>
-      <img src={BannerPhoto} alt='banner-image' className='hidden xl:block' />
+      <img src={BannerPhoto} alt='banner-image' className='hidden lg:block' />
     </section>
   );
 };

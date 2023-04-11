@@ -1,5 +1,6 @@
 import React from 'react';
 import { EducationItem } from './components';
+import { SectionTitle } from 'src/components';
 
 const Education = ({ educationRef }) => {
   return (
@@ -8,9 +9,7 @@ const Education = ({ educationRef }) => {
       className='w-full flex flex-col items-center justify-center'
       ref={educationRef}
     >
-      <h2 className='text-2xl font-bold mb-5 xl:text-4xl xl:mb-10'>
-        Education
-      </h2>
+      <SectionTitle title='Education' />
       <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
         <EducationItem
           title='BACHELOR OF ENGINEERING IN INFORMATICS'

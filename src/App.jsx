@@ -59,7 +59,7 @@ function App() {
             />
           </div>
         )}
-        <div className='space-y-16 xl:space-y-32'>
+        <div className='space-y-20 lg:space-y-32 xl:space-y-40'>
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
           <WorkHistory workHistoryRef={workHistoryRef} />
@@ -69,7 +69,7 @@ function App() {
             contactRef={contactRef}
             messageSendHandler={messageSendHandler}
           />
-          <div className='w-full text py-3 bg-amber-400 flex justify-center items-center xl:text-xl'>
+          <div className='w-full text py-3 bg-amber-400 flex justify-center items-center lg:text-xl'>
             The End
           </div>
         </div>

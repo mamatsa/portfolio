@@ -17,6 +17,7 @@ import {
   CypressLogo,
   SwaggerLogo,
 } from 'src/assets';
+import { SectionTitle } from 'src/components';
 
 const TechStack = ({ techStackRef }) => {
   return (
@@ -25,13 +26,12 @@ const TechStack = ({ techStackRef }) => {
       className='flex flex-col justify-start items-center'
       ref={techStackRef}
     >
-      <h2 className='text-2xl font-bold mb-2 xl:text-4xl xl:mb-5'>
-        My Tech Stack
-      </h2>
-      <p className='text-slate-400  xl:text-lg'>
-        Technologies I’ve been working with recently
-      </p>
-      <div className='flex flex-wrap justify-center items-center my-5 gap-5 xl:my-10'>
+      <SectionTitle
+        title='My Tech Stack'
+        description='Technologies I’ve been working with recently'
+      />
+
+      <div className='flex flex-wrap justify-center items-center gap-5'>
         <a
           href='https://developer.mozilla.org/en-US/docs/Web/HTML'
           target='_blank'

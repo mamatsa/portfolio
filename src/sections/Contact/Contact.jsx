@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import { Input, ContactCard } from './components';
+import { SectionTitle } from 'src/components';
 
 const Contact = ({ contactRef, messageSendHandler }) => {
   const form = useRef();
@@ -32,9 +33,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
     >
       {/* Contact form side */}
       <div className='flex flex-col justify-between mt-4 md:mt-0 md:w-[61%] '>
-        <h2 className='text-2xl font-bold mb-1 mx-auto md:text-3xl md:mb-8 2xl:text-4xl'>
-          Leave me a message
-        </h2>
+        <SectionTitle title='Leave me a message' />
         <form
           className='p-5 bg-white flex flex-col gap-4 md:p-10'
           onSubmit={(e) => sendEmail(e)}
@@ -61,9 +60,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
 
       {/* Contact information side */}
       <div className='flex flex-col md:w-[37%] '>
-        <h2 className='text-2xl font-bold mx-auto mb-2 md:text-3xl md:mb-8 2xl:text-4xl'>
-          Contact information
-        </h2>
+        <SectionTitle title='Contact Information' />
         <div className='flex flex-col justify-between gap-3 h-full'>
           <ContactCard
             icon={faMap}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { JobItem } from './components';
+import { SectionTitle } from 'src/components';
 
 const WorkHistory = ({ workHistoryRef }) => {
   return (
@@ -8,9 +9,7 @@ const WorkHistory = ({ workHistoryRef }) => {
       className='w-full flex flex-col items-center justify-center'
       ref={workHistoryRef}
     >
-      <h2 className='text-2xl font-bold mb-5 xl:text-4xl xl:mb-10'>
-        Work History
-      </h2>
+      <SectionTitle title='Work History' />
       <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
         <JobItem
           title='Full Stack Developer'
