@@ -15,6 +15,13 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [successMessage, setSuccessMessage] = useState('');
+  const [darkModeOn, setDarkModeOn] = useState(false);
+
+  const darkModeToggle = () => {
+    setDarkModeOn((prevState) => !prevState);
+    console.log(darkModeOn);
+  };
+
   const messageSendHandler = (success) => {
     if (success) {
       setSuccessMessage('success');
@@ -37,10 +44,14 @@ function App() {
   const contactIsInViewport = useIsInViewport(contactRef);
 
   return (
-    <div className='bg-slate-200 h-full w-full flex justify-between items-stretch'>
+    <div
+      className={`bg-slate-200 h-full w-full flex justify-between items-stretch ${
+        darkModeOn && 'dark'
+      }`}
+    >
       <SidePanel />
 
-      <div className='relative h-full w-full bg-slate-200 xl:mr-32 xl:ml-80 xl:px-10'>
+      <div className='relative h-full w-full bg-slate-200 xl:mr-28 xl:ml-72 xl:px-16 dark:bg-zinc-900'>
         {successMessage && (
           <div className='sticky top-0 w-full'>
             <p
@@ -82,6 +93,8 @@ function App() {
         educationIsInViewport={educationIsInViewport}
         projectsIsInViewport={projectsIsInViewport}
         contactIsInViewport={contactIsInViewport}
+        darkModeToggle={darkModeToggle}
+        darkModeOn={darkModeOn}
       />
     </div>
   );

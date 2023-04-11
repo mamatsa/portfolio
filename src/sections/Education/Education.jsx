@@ -10,7 +10,7 @@ const Education = ({ educationRef }) => {
       ref={educationRef}
     >
       <SectionTitle title='Education' />
-      <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-16 dark:bg-zinc-800'>
         <EducationItem
           title='BACHELOR OF ENGINEERING IN INFORMATICS'
           school='BTU'

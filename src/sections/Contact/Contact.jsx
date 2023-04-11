@@ -32,10 +32,10 @@ const Contact = ({ contactRef, messageSendHandler }) => {
       ref={contactRef}
     >
       {/* Contact form side */}
-      <div className='flex flex-col justify-between mt-4 md:mt-0 md:w-[61%] '>
+      <div className='flex flex-col justify-between mt-4 md:mt-0 md:w-[61%]'>
         <SectionTitle title='Leave me a message' />
         <form
-          className='p-5 bg-white flex flex-col gap-4 md:p-10'
+          className='p-5 bg-white flex flex-col gap-4 md:p-10 dark:bg-zinc-800'
           onSubmit={(e) => sendEmail(e)}
           ref={form}
         >

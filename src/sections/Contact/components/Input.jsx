@@ -3,7 +3,10 @@ import React from 'react';
 const Input = (props) => {
   return (
     <div className='flex flex-col items-start justify-center'>
-      <label htmlFor={props.id} className='text-slate-600 mb-1 md:text-lg'>
+      <label
+        htmlFor={props.id}
+        className='text-slate-600 mb-1 md:text-lg dark:text-zinc-400'
+      >
         {props.label}
       </label>
       {props.textarea ? (

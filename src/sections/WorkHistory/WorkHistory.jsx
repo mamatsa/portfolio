@@ -10,7 +10,7 @@ const WorkHistory = ({ workHistoryRef }) => {
       ref={workHistoryRef}
     >
       <SectionTitle title='Work History' />
-      <div className='bg-white w-full p-6 sm:p-8 xl:p-16'>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-16 dark:bg-zinc-800'>
         <JobItem
           title='Full Stack Developer'
           company='Redberry'

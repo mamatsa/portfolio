@@ -40,7 +40,7 @@ const SidePanel = () => {
         RESUME PANEL
       </button>
       <div
-        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex ${
+        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex dark:bg-zinc-800 ${
           panelIsOpen ? 'flex xl:w-2/12' : 'hidden'
         }`}
       >
@@ -56,7 +56,7 @@ const SidePanel = () => {
 
         {/* Name, position */}
         <div className='flex flex-col items-center'>
-          <h3 className='font-medium text-amber-950 mb-1 xl:text-lg'>
+          <h3 className='font-medium text-amber-950 mb-1 xl:text-lg dark:text-white'>
             Otar Mamatsashvili
           </h3>
           <p className='text-xs text-gray-500 xl:text-sm'>
@@ -94,7 +94,7 @@ const SidePanel = () => {
 
         {/* Languages */}
         <div className='w-full place-self-start'>
-          <h3 className='font-medium xl:text-lg'>Languages</h3>
+          <h3 className='font-medium xl:text-lg dark:text-white '>Languages</h3>
           <ProgressBar title='Georgian' progressTitle='Native' progress='100' />
           <ProgressBar title='English' progressTitle='B2' progress='75' />
         </div>
@@ -103,7 +103,9 @@ const SidePanel = () => {
 
         {/* Skills */}
         <div className='w-full place-self-start'>
-          <h3 className='font-medium xl:text-lg'>Main Skills</h3>
+          <h3 className='font-medium xl:text-lg dark:text-white '>
+            Main Skills
+          </h3>
           <ProgressBar title='HTML/CSS' progressTitle='90%' progress='90' />
           <ProgressBar title='Javascript' progressTitle='80%' progress='80' />
           <ProgressBar title='Typescript' progressTitle='70%' progress='70' />

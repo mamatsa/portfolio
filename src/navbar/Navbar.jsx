@@ -10,6 +10,7 @@ import {
   faFeatherPointed,
   faMessage,
   faBars,
+  faMoon,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({
@@ -19,6 +20,8 @@ const Navbar = ({
   educationIsInViewport,
   contactIsInViewport,
   projectsIsInViewport,
+  darkModeToggle,
+  darkModeOn,
 }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [burgerIsVisible, setBurgerIsVisible] = useState(true);
@@ -54,11 +57,16 @@ const Navbar = ({
 
       {/* Navbar */}
       <div
-        className={`fixed right-0 top-0 h-full px-9 bg-slate-100  flex-col items-center justify-start py-10 ${
+        className={`fixed right-0 top-0 h-full px-9 bg-slate-100  flex-col items-center justify-start py-10 dark:bg-neutral-800 ${
           navIsOpen ? 'flex' : 'hidden xl:flex'
         }`}
       >
-        <FontAwesomeIcon icon={faSun} size='xl' className='mb-40' />
+        <FontAwesomeIcon
+          icon={darkModeOn ? faMoon : faSun}
+          size='xl'
+          className='mb-40 cursor-pointer dark:text-white'
+          onClick={darkModeToggle}
+        />
 
         <nav className='flex flex-col items-center justify center gap-4 xl:gap-6'>
           <NavItem
