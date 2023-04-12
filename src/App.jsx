@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Navbar from 'src/navbar';
 import SidePanel from 'src/side-panel';
 import {
@@ -17,9 +17,19 @@ function App() {
   const [successMessage, setSuccessMessage] = useState('');
   const [darkModeOn, setDarkModeOn] = useState(false);
 
+  useEffect(() => {
+    if (localStorage.getItem('darkMode')) {
+      setDarkModeOn(true);
+    }
+  }, []);
+
   const darkModeToggle = () => {
+    if (darkModeOn) {
+      localStorage.removeItem('darkMode');
+    } else {
+      localStorage.setItem('darkMode', 'on');
+    }
     setDarkModeOn((prevState) => !prevState);
-    console.log(darkModeOn);
   };
 
   const messageSendHandler = (success) => {
