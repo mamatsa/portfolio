@@ -3,11 +3,20 @@ import { faMap, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import { Input, ContactCard } from './components';
 import { SectionTitle } from 'src/components';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { validationSchema } from './schemas';
 
 const Contact = ({ contactRef, messageSendHandler }) => {
   const form = useRef();
 
-  const sendEmail = async (e) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(validationSchema) });
+
+  const onSubmit = async (_, e) => {
     e.preventDefault();
     try {
       await emailjs.sendForm(
@@ -32,21 +41,43 @@ const Contact = ({ contactRef, messageSendHandler }) => {
       ref={contactRef}
     >
       {/* Contact form side */}
-      <div className='flex flex-col justify-between mt-4 md:mt-0 md:w-[61%]'>
+      <div className='flex flex-col justify-between mt-20 md:mt-0 md:w-[61%]'>
         <SectionTitle title='Leave me a message' />
         <form
-          className='p-5 bg-white flex flex-col gap-4 md:p-10 dark:bg-zinc-800'
-          onSubmit={(e) => sendEmail(e)}
+          onSubmit={handleSubmit(onSubmit)}
+          className='p-6 bg-white flex flex-col gap-6 md:px-10 md:py-12 dark:bg-zinc-800'
+          // onSubmit={(e) => sendEmail(e)}
           ref={form}
         >
-          <Input id='name' type='text' label='Your Name (Required)' />
-          <Input id='email' type='email' label='Your Email (Required)' />
-          <Input id='subject' type='text' label='Subject' />
+          <Input
+            id='name'
+            type='text'
+            label='Your Name (Required)'
+            register={register}
+            errors={errors}
+          />
+
+          <Input
+            id='email'
+            type='email'
+            label='Your Email (Required)'
+            register={register}
+            errors={errors}
+          />
+          <Input
+            id='subject'
+            type='text'
+            label='Subject'
+            register={register}
+            errors={errors}
+          />
           <Input
             id='message'
             type='text'
             label='Your Message'
             textarea={true}
+            register={register}
+            errors={errors}
           />
 
           <button

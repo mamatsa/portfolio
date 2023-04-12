@@ -53,7 +53,7 @@ function App() {
 
       <div className='relative h-full w-full bg-slate-200 xl:mr-28 xl:ml-72 xl:px-16 dark:bg-zinc-900'>
         {successMessage && (
-          <div className='sticky top-0 w-full'>
+          <div className='sticky top-0 w-full z-20'>
             <p
               className={`${
                 successMessage === 'success' ? 'bg-green-500' : 'bg-red-500'
