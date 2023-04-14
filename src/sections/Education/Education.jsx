@@ -19,7 +19,7 @@ const Education = ({ educationRef }) => {
           details={[
             'Learning with a 100% scholarship.',
             'Current GPA: 3.6',
-            'Important courses covered: Calculus, Data structures and algorithms, HTML/CSS & Javascript, React, Linux, English B2 and C1 levels.',
+            'Important courses covered: Calculus, Data structures and algorithms, HTML/CSS & Javascript, React, Linux, UX/UI, English B2 and C1 levels.',
           ]}
         />
 

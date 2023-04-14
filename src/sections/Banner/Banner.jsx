@@ -18,11 +18,14 @@ const Banner = ({ homeRef }) => {
           <span className=' text-amber-400'>Front-End</span> Developer
         </h2>
         <p className='text-gray-400 my-6 2xl:w-3/5'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus.
+          I am junior developer and information technology student with
+          experience of working with various projects. Including real-world
+          production ready applications and studying ones.
         </p>
-        <Button text='HIRE ME' icon={faArrowRight} />
+        <a href='#contact'>
+          {' '}
+          <Button text='HIRE ME' hre icon={faArrowRight} />
+        </a>
       </div>
       <img src={BannerPhoto} alt='banner-image' className='hidden lg:block' />
     </section>
