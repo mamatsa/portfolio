@@ -12,9 +12,9 @@ const Project = ({
   siteLink,
 }) => {
   return (
-    <div className='bg-white rounded-lg w-2/3 md:w-[31%] dark:bg-zinc-800'>
+    <div className='bg-white rounded-lg w-2/3 md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
       <img src={image} alt='name' className='w-full rounded-t-lg' />
-      <div className='p-3 md:p-8'>
+      <div className='flex flex-col h-full justify-between p-3 md:p-8'>
         <h3 className='text-lg mb-3 mx-6 whitespace-nowrap md:text-2xl md:mb-4 md:mx-0 dark:text-white'>
           {name}
         </h3>
@@ -30,6 +30,7 @@ const Project = ({
         <div className='flex items-center justify-between mt-3 md:mt-5'>
           <a
             href={githubLink}
+            target='_blank'
             className='underline flex items-center dark:no-underline'
           >
             <FontAwesomeIcon
@@ -40,7 +41,10 @@ const Project = ({
           </a>
           <a
             href={siteLink}
-            className='underline flex items-center dark:no-underline'
+            target='_blank'
+            className={`underline flex items-center dark:no-underline ${
+              !siteLink && 'pointer-events-none text-zinc-500'
+            }`}
           >
             <FontAwesomeIcon
               icon={faLink}
