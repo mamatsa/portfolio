@@ -7,10 +7,12 @@ i18next
   .use(HttpApi)
   .init({
     lng: 'en',
+    fallbackLng: 'en',
     supportedLngs: ['en', 'ka'],
     interpolation: {
       escapeValue: false,
     },
+    debug: true,
   });
 
 export default i18next;

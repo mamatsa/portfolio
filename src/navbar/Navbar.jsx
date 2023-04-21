@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavItem } from './components';
+import { NavItem, LanguageChanger } from './components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSun,
@@ -57,14 +57,14 @@ const Navbar = ({
 
       {/* Navbar */}
       <div
-        className={`fixed right-0 top-0 h-full px-9 bg-slate-100  flex-col items-center justify-start py-10 dark:bg-neutral-800 ${
+        className={`fixed right-0 top-0 h-full px-9 bg-slate-100  flex-col items-center justify-between py-10 dark:bg-neutral-800 ${
           navIsOpen ? 'flex' : 'hidden xl:flex'
         }`}
       >
         <FontAwesomeIcon
           icon={darkModeOn ? faMoon : faSun}
           size='xl'
-          className='mb-40 cursor-pointer dark:text-white'
+          className='cursor-pointer dark:text-white'
           onClick={darkModeToggle}
         />
 
@@ -100,6 +100,7 @@ const Navbar = ({
             isInViewport={contactIsInViewport && !projectsIsInViewport}
           />
         </nav>
+        <LanguageChanger />
       </div>
     </>
   );

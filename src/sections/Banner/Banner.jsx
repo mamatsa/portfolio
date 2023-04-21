@@ -2,8 +2,11 @@ import React from 'react';
 import { BannerPhoto } from 'src/assets';
 import { Button } from 'src/components';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Banner = ({ homeRef }) => {
+  const { t } = useTranslation();
+
   return (
     <section
       id='home'
@@ -12,7 +15,7 @@ const Banner = ({ homeRef }) => {
     >
       <div>
         <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
-          I'm Otar Mamatsashvili
+          I'm {t('name')}
         </h2>
         <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
           <span className=' text-amber-400'>Front-End</span> Developer
