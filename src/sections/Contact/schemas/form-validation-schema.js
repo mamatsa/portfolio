@@ -13,7 +13,7 @@ const validationSchema = yup
       .email('Must be a valid email.'),
     message: yup
       .string()
-      .required('Email field is required.')
+      .required('Message field is required.')
       .min(3, 'Message must contain at least 3 characters.'),
   })
   .required();
