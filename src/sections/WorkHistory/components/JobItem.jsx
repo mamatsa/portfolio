@@ -11,7 +11,7 @@ const JobItem = (props) => {
     <div className='w-full'>
       <div className='flex justify-between items-center'>
         <h3 className='mb-1 text-lg md:text-2xl dark:text-white'>
-          {props.title}
+          {props.position}
         </h3>
         <p className='bg-amber-400 text-xs px-3 py-1 whitespace-nowrap rounded-sm mb-1 flex justify-center items-center md:text-base'>
           {props.workHours}
@@ -28,7 +28,7 @@ const JobItem = (props) => {
               icon={faLocationDot}
               className='text-gray-400 mr-2'
             />
-            {props.place}
+            {props.location}
           </p>
         </div>
 

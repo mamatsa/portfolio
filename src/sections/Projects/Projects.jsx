@@ -11,20 +11,25 @@ import {
 } from 'src/assets';
 import { Project } from './components';
 import { SectionTitle } from 'src/components';
+import { useTranslation } from 'react-i18next';
 
 const Projects = ({ projectsRef }) => {
+  const { t } = useTranslation();
   return (
     <div
       id='projects'
       className='flex flex-col justify-center items-center'
       ref={projectsRef}
     >
-      <SectionTitle title='Projects' description="Things I've built so far" />
+      <SectionTitle
+        title={t('projects.title')}
+        description={t('projects.description')}
+      />
       <div className='flex gap-[3%] overflow-x-scroll w-full md:flex-wrap md:gap-y-10 md:justify-center md:overflow-auto'>
         <Project
           image={FolksoulScreen}
           name='Folksoul'
-          description='FolkSoul is a music band website, where you can view information about the band and its members. Only authenticated admins can modify this information.'
+          description={t('projects.description1')}
           techStack='React, Typescript, Tailwind, Axios'
           githubLink='https://github.com/mamatsa/folksoul-front'
           siteLink=''
@@ -32,7 +37,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={FolksoulAPIScreen}
           name='Folksoul API'
-          description='Backend API for folksoul application, where information is stored and retrieved from mongo database.'
+          description={t('projects.description2')}
           techStack='Express, Typescript, Mongoose, Swagger'
           githubLink='https://github.com/mamatsa/folksoul-api'
           siteLink=''
@@ -40,7 +45,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={CoronaScreen}
           name='Coronatime'
-          description='Coronatime is a  website where you can register/login and then view covid statistics by country or worldwide summed up data. '
+          description={t('projects.description3')}
           techStack='React, Typescript, Tailwind, Axios, I18Next, Cypress'
           githubLink='https://github.com/mamatsa/coronatime'
           siteLink='https://silly-sawine-9074b6.netlify.app/'
@@ -48,7 +53,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={QuestionnaireScreen}
           name='Questionnaire'
-          description='This is covid questionnaire for company employees where they fill in data of their covid related information.'
+          description={t('projects.description4')}
           techStack='React, Javascript, Tailwind, Axios'
           githubLink='https://github.com/mamatsa/covid-questionnaire'
           siteLink='https://clever-toffee-4c99fc.netlify.app/'
@@ -56,7 +61,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={JobSurvey}
           name='Job Survey'
-          description='This is a survey created for Redberry(Georgian Tech Company) internship program. Here you answer questions about you.'
+          description={t('projects.description5')}
           techStack='React, Javascript, CSS'
           githubLink='https://github.com/mamatsa/redberry-survey'
           siteLink='https://focused-lamarr-c000ae.netlify.app/'
@@ -64,7 +69,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={CompanyAPI}
           name='Company API'
-          description='Company backend API, where you can read, add, update and delete information about companies and employees. '
+          description={t('projects.description6')}
           techStack='Express, Mongoose, Javascript, Swagger'
           githubLink='https://github.com/mamatsa/company-employees-api'
           siteLink=''
@@ -72,7 +77,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={TodoScreen}
           name='Todo List'
-          description='Simple todo list where you can save todos, mark them completed and delete useless ones.'
+          description={t('projects.description7')}
           techStack='HTML, CSS, Javascript'
           githubLink='https://github.com/mamatsa/todo-list'
           siteLink='https://mamatsa.github.io/todo-list/'
@@ -80,7 +85,7 @@ const Projects = ({ projectsRef }) => {
         <Project
           image={TributeScreen}
           name='Tribute Page'
-          description='Tribute page for Aleksandre Kartvelishvili, Georgian aircraft designer. One page application with simple styling and parallax scrolling. '
+          description={t('projects.description8')}
           techStack='HTML, CSS, Javascript'
           githubLink='https://github.com/mamatsa/tribute-page'
           siteLink='https://mamatsa.github.io/tribute-page/'

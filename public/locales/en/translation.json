@@ -1,3 +1,134 @@
 {
-  "name": "Otar Mamatsashvli"
+  "panel": {
+    "title": "RESUME PANEL",
+    "name": "Otar Mamatsashvili",
+    "profession": "Front-End Developer",
+    "ageLabel": "Age:",
+    "addressLabel": "Address:",
+    "address": "Tbilisi, Georgia",
+    "statusLabel": "Status:",
+    "status": "Open to work",
+    "languagesLabel": "Languages",
+    "georgian": "Georgian",
+    "native": "Native",
+    "english": "English",
+    "skillsLabel": "Main Skills",
+    "downloadResume": "DOWNLOAD RESUME"
+  },
+  "banner": {
+    "name": "I'm Otar Mamatsashvili",
+    "role": "Front-End",
+    "profession": "Developer",
+    "about": "I am junior developer and information technology student with experience of working with various projects. Including real-world production ready applications and studying ones.",
+    "contact": "Contact Me"
+  },
+  "techStack": {
+    "title": "My Tech Stack",
+    "description": "Technologies I’ve been working with recently"
+  },
+  "work": {
+    "title": "Work History",
+    "job1": {
+      "position": "Full Stack Developer Intern",
+      "company": "Redberry",
+      "location": "Tbilisi",
+      "period": "Apr 2022 - Sep 2022",
+      "workHours": "Full Time",
+      "details": [
+        "Learned programming principles and new emerging technologies.",
+        "Created several production-ready applications with fluency in modern front-end and back-end frameworks.",
+        "Worked under the mentorship of experienced web developers."
+      ]
+    },
+    "job2": {
+      "position": "Junior Front End Developer",
+      "company": "DLS",
+      "location": "Remote",
+      "period": "Jan 2022 - Mar 2022",
+      "workHours": "Full Time",
+      "details": [
+        "Coded using HTML, CSS and JavaScript to create responsive pages and components for the company website.",
+        "Worked cooperatively in a team with business people, designers and developers in a deadline-driven environment."
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "school1": {
+      "title": "BACHELOR OF ENGINEERING IN INFORMATICS",
+      "school": "BTU",
+      "place": "Tbilisi",
+      "period": "Apr 2022 - Sep 2022",
+      "details": [
+        "Learning with a 100% scholarship.",
+        "Current GPA: 3.6",
+        "Important courses covered: Calculus, Data structures and algorithms, HTML/CSS & Javascript, React, Linux, UX/UI, English B2 and C1 levels."
+      ]
+    },
+    "school2": {
+      "title": "School Graduate",
+      "school": "N2 Public School",
+      "place": "Kaspi",
+      "period": "2007 - 2019",
+      "details": [
+        "Awarded with gold medal for successful graduation.",
+        "Current GPA: 3.6",
+        "Awarded with laptop after 9th grade for having high scores."
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Things I've built so far",
+    "techStack": "Tech Stack",
+    "viewCode": "View Code",
+    "livePreview": "Live Preview",
+    "description1": "FolkSoul is a music band website, where you can view information about the band and its members. Only authenticated admins can modify this information.",
+    "description2": "Backend API for folksoul application, where information is stored and retrieved from mongo database.",
+    "description3": "Coronatime is a  website where you can register/login and then view covid statistics by country or worldwide summed up data.",
+    "description4": "This is covid questionnaire for company employees where they fill in data of their covid related information.",
+    "description5": "This is a survey created for Redberry(Georgian Tech Company) internship program. Here you answer questions about you.",
+    "description6": "Company backend API, where you can read, add, update and delete information about companies and employees.",
+    "description7": "Simple todo list where you can save todos, mark them completed and delete useless ones.",
+    "description8": "Tribute page for Aleksandre Kartvelishvili, Georgian aircraft designer. One page application with simple styling and parallax scrolling."
+  },
+  "contact": {
+    "message": {
+      "title": "Leave me a message",
+      "nameLabel": "Your Name (Required)",
+      "emailLabel": "Your Email (Required)",
+      "subjectLabel": "Subject",
+      "messageLabel": "Your Message",
+      "buttonText": "SEND MESSAGE"
+    },
+    "details": {
+      "title": "Contact Information",
+      "countryLabel": "Country:",
+      "country": "Georgia",
+      "cityLabel": "City:",
+      "city": "Kaspi",
+      "streetLabel": "Street:",
+      "street": "Dadiani",
+      "emailLabel": "Email:",
+      "discordLabel": "Discord:",
+      "phoneLabel": "Phone Number:"
+    },
+    "errors": {
+      "name": {
+        "required": "Name field is required.",
+        "min": "Name must contain at least 2 characters."
+      },
+      "email": {
+        "required": "Email field is required.",
+        "valid": "Must be a valid email."
+      },
+      "message": {
+        "required": "Message field is required.",
+        "min": "Message must contain at least 3 characters."
+      }
+    },
+    "success": "Message sent successfully!",
+    "fail": "Failed!"
+  },
+  "footerText": "The ned of the beginning"
 }

@@ -18,8 +18,10 @@ import {
   SwaggerLogo,
 } from 'src/assets';
 import { SectionTitle } from 'src/components';
+import { useTranslation } from 'react-i18next';
 
 const TechStack = ({ techStackRef }) => {
+  const { t } = useTranslation();
   return (
     <section
       id='tech-stack'
@@ -27,8 +29,8 @@ const TechStack = ({ techStackRef }) => {
       ref={techStackRef}
     >
       <SectionTitle
-        title='My Tech Stack'
-        description='Technologies I’ve been working with recently'
+        title={t('techStack.title')}
+        description={t('techStack.description')}
       />
 
       <div className='flex flex-wrap justify-center items-center gap-5'>

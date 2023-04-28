@@ -12,8 +12,10 @@ import {
 import { useIsInViewport } from 'src/hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { t } = useTranslation();
   const [successMessage, setSuccessMessage] = useState('');
   const [darkModeOn, setDarkModeOn] = useState(false);
 
@@ -70,8 +72,8 @@ function App() {
               } flex items-center justify-center py-2`}
             >
               {successMessage === 'success'
-                ? 'Message sent successfully!'
-                : 'Failed!'}
+                ? t('contact.success')
+                : t('contact.fail')}
             </p>
             <FontAwesomeIcon
               icon={faXmark}
@@ -91,7 +93,7 @@ function App() {
             messageSendHandler={messageSendHandler}
           />
           <div className='w-full text py-3 bg-amber-400 flex justify-center items-center lg:text-xl'>
-            The End
+            {t('footerText')}
           </div>
         </div>
       </div>

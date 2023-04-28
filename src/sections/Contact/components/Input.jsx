@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Input = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div className='relative flex flex-col items-start justify-center'>
       <label
@@ -36,7 +39,7 @@ const Input = (props) => {
       )}
       {props.errors[props.id] && (
         <p role='alert' className='text-red-500 text-sm absolute -bottom-5'>
-          {props.errors[props.id].message}
+          {t(props.errors[props.id].message)}
         </p>
       )}
     </div>

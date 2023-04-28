@@ -15,19 +15,15 @@ const Banner = ({ homeRef }) => {
     >
       <div>
         <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
-          I'm {t('name')}
+          {t('banner.name')}
         </h2>
         <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
-          <span className=' text-amber-400'>Front-End</span> Developer
+          <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
+          {t('banner.profession')}
         </h2>
-        <p className='text-gray-400 my-6 2xl:w-3/5'>
-          I am junior developer and information technology student with
-          experience of working with various projects. Including real-world
-          production ready applications and studying ones.
-        </p>
+        <p className='text-gray-400 my-6 2xl:w-3/5'>{t('banner.about')}</p>
         <a href='#contact'>
-          {' '}
-          <Button text='HIRE ME' hre icon={faArrowRight} />
+          <Button text={t('banner.contact')} hre icon={faArrowRight} />
         </a>
       </div>
       <img src={BannerPhoto} alt='banner-image' className='hidden lg:block' />

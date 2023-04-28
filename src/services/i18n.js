@@ -9,6 +9,7 @@ i18next
     lng: 'en',
     fallbackLng: 'en',
     supportedLngs: ['en', 'ka'],
+    returnObjects: true,
     interpolation: {
       escapeValue: false,
     },

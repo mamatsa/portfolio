@@ -7,8 +7,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Button, SeparatorLine } from 'src/components';
 import { ProfilePicture, MediaLink, ProgressBar, Status } from './components';
+import { useTranslation } from 'react-i18next';
 
 const SidePanel = () => {
+  const { t } = useTranslation();
   const [panelIsOpen, setPanelIsOpen] = useState(false);
 
   const resumeDownloadHandler = async () => {
@@ -37,7 +39,7 @@ const SidePanel = () => {
         }`}
         onClick={() => setPanelIsOpen(true)}
       >
-        RESUME PANEL
+        {t('panel.title')}
       </button>
       <div
         className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex dark:bg-zinc-800 ${
@@ -50,17 +52,17 @@ const SidePanel = () => {
           }`}
           onClick={() => setPanelIsOpen(false)}
         >
-          PRESUME PANEL
+          {t('panel.title')}
         </button>
         <ProfilePicture />
 
         {/* Name, position */}
         <div className='flex flex-col items-center'>
           <h3 className='font-medium text-amber-950 mb-1 xl:text-lg dark:text-white'>
-            Otar Mamatsashvili
+            {t('panel.name')}
           </h3>
           <p className='text-xs text-gray-500 xl:text-sm'>
-            Front-End Developer
+            {t('panel.profession')}
           </p>
 
           {/* Social links */}
@@ -81,11 +83,11 @@ const SidePanel = () => {
 
         {/* Personal info */}
         <div className='w-full flex flex-col gap-2'>
-          <Status label='Age:' value='21' />
-          <Status label='Address:' value='Tbilisi, Georgia' />
+          <Status label={t('panel.ageLabel')} value='21' />
+          <Status label={t('panel.addressLabel')} value={t('panel.address')} />
           <Status
-            label='Status:'
-            value='Open to work'
+            label={t('panel.statusLabel')}
+            value={t('panel.status')}
             valueColor='text-green-500'
           />
         </div>
@@ -95,8 +97,16 @@ const SidePanel = () => {
         {/* Languages */}
         <div className='w-full place-self-start'>
           <h3 className='font-medium xl:text-lg dark:text-white '>Languages</h3>
-          <ProgressBar title='Georgian' progressTitle='Native' progress='100' />
-          <ProgressBar title='English' progressTitle='B2' progress='75' />
+          <ProgressBar
+            title={t('panel.georgian')}
+            progressTitle={t('panel.native')}
+            progress='100'
+          />
+          <ProgressBar
+            title={t('panel.english')}
+            progressTitle='B2'
+            progress='75'
+          />
         </div>
 
         <SeparatorLine />
@@ -104,7 +114,7 @@ const SidePanel = () => {
         {/* Skills */}
         <div className='w-full place-self-start'>
           <h3 className='font-medium xl:text-lg dark:text-white '>
-            Main Skills
+            {t('panel.skillsLabel')}
           </h3>
           <ProgressBar title='HTML/CSS' progressTitle='90%' progress='90' />
           <ProgressBar title='Javascript' progressTitle='80%' progress='80' />
@@ -115,7 +125,7 @@ const SidePanel = () => {
         <SeparatorLine />
 
         <Button
-          text='DOWNLOAD RESUME'
+          text={t('panel.downloadResume')}
           icon={faDownload}
           clickHandler={resumeDownloadHandler}
           wide={true}

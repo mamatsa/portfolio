@@ -4,17 +4,17 @@ const validationSchema = yup
   .object({
     name: yup
       .string()
-      .required('Name field is required.')
-      .min(2, 'Name must contain at least 2 characters.'),
+      .required('contact.errors.name.required')
+      .min(2, 'contact.errors.name.min'),
 
     email: yup
       .string()
-      .required('Email field is required.')
-      .email('Must be a valid email.'),
+      .required('contact.errors.email.required')
+      .email('contact.errors.email.valid'),
     message: yup
       .string()
-      .required('Message field is required.')
-      .min(3, 'Message must contain at least 3 characters.'),
+      .required('contact.errors.message.required')
+      .min(3, 'contact.errors.message.min'),
   })
   .required();
 

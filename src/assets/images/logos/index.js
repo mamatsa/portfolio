@@ -1,0 +1,16 @@
+export { default as ReactLogo } from './react-logo.png';
+export { default as JSLogo } from './js-logo.png';
+export { default as TSLogo } from './ts-logo.png';
+export { default as HTMLLogo } from './html-logo.png';
+export { default as CSSLogo } from './css-logo.png';
+export { default as LinuxLogo } from './linux-logo.png';
+export { default as FigmaLogo } from './figma-logo.png';
+export { default as NodeLogo } from './node-logo.png';
+export { default as MongoLogo } from './mongo-logo.png';
+export { default as TailwindLogo } from './tailwind-logo.png';
+export { default as VscodeLogo } from './vscode-logo.png';
+export { default as ExpressLogo } from './express-logo.png';
+export { default as GithubLogo } from './github-logo.png';
+export { default as GitLogo } from './git-logo.png';
+export { default as SwaggerLogo } from './swagger-logo.png';
+export { default as CypressLogo } from './cypress-logo.png';

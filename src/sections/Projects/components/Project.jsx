@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Project = ({
   image,
@@ -11,6 +12,8 @@ const Project = ({
   githubLink,
   siteLink,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className='bg-white rounded-lg w-2/3 md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
       <img src={image} alt='name' className='w-full rounded-t-lg' />
@@ -22,7 +25,7 @@ const Project = ({
           {description}
         </p>
         <p className='text-sm md:text-base dark:text-white'>
-          Tech stack:{' '}
+          {t('projects.techStack')}:{' '}
           <span className='text-xs font-light md:text-sm dark:text-white'>
             {techStack}
           </span>
@@ -37,7 +40,9 @@ const Project = ({
               icon={faGithub}
               className='mr-1 xl:mr-2 dark:text-white'
             />
-            <p className='hidden md:block dark:text-white'>View Code</p>
+            <p className='hidden md:block dark:text-white'>
+              {t('projects.viewCode')}
+            </p>
           </a>
           <a
             href={siteLink}
@@ -50,7 +55,9 @@ const Project = ({
               icon={faLink}
               className='ml-10 mr-1 xl:mr-2 dark:text-white'
             />
-            <p className='hidden md:block dark:text-white'>Live Preview</p>
+            <p className='hidden md:block dark:text-white'>
+              {t('projects.livePreview')}
+            </p>
           </a>
         </div>
       </div>

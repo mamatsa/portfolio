@@ -6,8 +6,10 @@ import { SectionTitle } from 'src/components';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { validationSchema } from './schemas';
+import { useTranslation } from 'react-i18next';
 
 const Contact = ({ contactRef, messageSendHandler }) => {
+  const { t } = useTranslation();
   const form = useRef();
 
   const {
@@ -42,7 +44,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
     >
       {/* Contact form side */}
       <div className='flex flex-col justify-between mt-20 md:mt-0 md:w-[61%]'>
-        <SectionTitle title='Leave me a message' />
+        <SectionTitle title={t('contact.message.title')} />
         <form
           onSubmit={handleSubmit(onSubmit)}
           className='p-6 bg-white flex flex-col gap-6 md:px-10 md:py-12 dark:bg-zinc-800'
@@ -52,7 +54,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
           <Input
             id='name'
             type='text'
-            label='Your Name (Required)'
+            label={t('contact.message.nameLabel')}
             register={register}
             errors={errors}
           />
@@ -60,21 +62,21 @@ const Contact = ({ contactRef, messageSendHandler }) => {
           <Input
             id='email'
             type='email'
-            label='Your Email (Required)'
+            label={t('contact.message.emailLabel')}
             register={register}
             errors={errors}
           />
           <Input
             id='subject'
             type='text'
-            label='Subject'
+            label={t('contact.message.subjectLabel')}
             register={register}
             errors={errors}
           />
           <Input
             id='message'
             type='text'
-            label='Your Message'
+            label={t('contact.message.messageLabel')}
             textarea={true}
             register={register}
             errors={errors}
@@ -84,33 +86,50 @@ const Contact = ({ contactRef, messageSendHandler }) => {
             type='submit'
             className='px-4 py-2 bg-amber-400 place-self-start mt-4 w-full md:w-auto'
           >
-            SEND MESSAGE
+            {t('contact.message.buttonText')}
           </button>
         </form>
       </div>
 
       {/* Contact information side */}
       <div className='flex flex-col md:w-[37%] '>
-        <SectionTitle title='Contact Information' />
+        <SectionTitle title={t('contact.details.title')} />
         <div className='flex flex-col justify-between gap-3 h-full'>
           <ContactCard
             icon={faMap}
             contacts={[
-              { label: 'Country:', value: 'Georgia' },
-              { label: 'City:', value: 'Tbilisi' },
-              { label: 'Street:', value: 'Dadiani' },
+              {
+                label: t('contact.details.countryLabel'),
+                value: t('contact.details.country'),
+              },
+              {
+                label: t('contact.details.cityLabel'),
+                value: t('contact.details.city'),
+              },
+              {
+                label: t('contact.details.streetLabel'),
+                value: t('contact.details.street'),
+              },
             ]}
           />
           <ContactCard
             icon={faEnvelope}
             contacts={[
-              { label: 'Email:', value: 'otar.mamatsashvili@gmail.com' },
-              { label: 'Discord:', value: 'Otar#7677' },
+              {
+                label: t('contact.details.emailLabel'),
+                value: 'otar.mamatsashvili@gmail.com',
+              },
+              { label: t('contact.details.discordLabel'), value: 'Otar#7677' },
             ]}
           />
           <ContactCard
             icon={faPhone}
-            contacts={[{ label: 'Phone Number:', value: '+995598561151' }]}
+            contacts={[
+              {
+                label: t('contact.details.phoneLabel'),
+                value: '+995598561151',
+              },
+            ]}
           />
         </div>
       </div>

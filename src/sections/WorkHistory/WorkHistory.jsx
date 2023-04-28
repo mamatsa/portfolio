@@ -1,41 +1,36 @@
 import React from 'react';
 import { JobItem } from './components';
 import { SectionTitle } from 'src/components';
+import { useTranslation } from 'react-i18next';
 
 const WorkHistory = ({ workHistoryRef }) => {
+  const { t } = useTranslation();
   return (
     <div
       id='work-history'
       className='w-full flex flex-col items-center justify-center'
       ref={workHistoryRef}
     >
-      <SectionTitle title='Work History' />
+      <SectionTitle title={t('work.title')} />
       <div className='bg-white w-full p-6 sm:p-8 xl:p-16 dark:bg-zinc-800'>
         <JobItem
-          title='Full Stack Developer'
-          company='Redberry'
-          place='Tbilisi'
-          period='Apr 2022 - Sep 2022'
-          workHours='Full Time'
-          details={[
-            'Learned programming principles and new emerging technologies.',
-            'Created several production-ready applications with fluency in modern front-end and back-end frameworks.',
-            'Worked under the mentorship of experienced web developers.',
-          ]}
+          position={t('work.job1.position')}
+          company={t('work.job1.company')}
+          location={t('work.job1.location')}
+          period={t('work.job1.period')}
+          workHours={t('work.job1.workHours')}
+          details={t('work.job1.details')}
         />
 
         <hr className='my-5 xl:my-10' />
 
         <JobItem
-          title='Junior Front End Developer'
-          company='DLS'
-          place='Tbilisi'
-          period='Jan 2022 - Mar 2022'
-          workHours='Full Time'
-          details={[
-            'Coded using HTML, CSS and JavaScript to create responsive pages and components for the company website.',
-            'Worked cooperatively in a team with business people, designers and developers in a deadline-driven environment.',
-          ]}
+          position={t('work.job2.position')}
+          company={t('work.job2.company')}
+          location={t('work.job2.location')}
+          period={t('work.job2.period')}
+          workHours={t('work.job2.workHours')}
+          details={t('work.job2.details')}
         />
       </div>
     </div>
