@@ -10,20 +10,31 @@ import { ProfilePicture, MediaLink, ProgressBar, Status } from './components';
 import { useTranslation } from 'react-i18next';
 
 const SidePanel = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [panelIsOpen, setPanelIsOpen] = useState(false);
 
   const resumeDownloadHandler = async () => {
-    const response = await fetch("Otar's Resume.pdf");
+    let response;
+    if (i18n.language === 'ka') {
+      response = await fetch('ოთარის რეზიუმე.pdf');
+    } else {
+      response = await fetch("Otar's Resume.pdf");
+    }
     const blob = await response.blob();
     // Creating new object of PDF file
     const fileURL = window.URL.createObjectURL(blob);
     // Setting various property values
     let alink = document.createElement('a');
     alink.href = fileURL;
-    alink.download = "Otar's gitResume.pdf";
+    if (i18n.language === 'ka') {
+      alink.download = 'ოთარის რეზიუმე.pdf';
+    } else {
+      alink.download = "Otar's Resume.pdf";
+    }
     alink.click();
   };
+
+  console.log(t);
 
   return (
     <>
