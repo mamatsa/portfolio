@@ -26,9 +26,9 @@ const Navbar = ({
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [burgerIsVisible, setBurgerIsVisible] = useState(true);
 
-  let prevScrollPos = window.pageYOffset;
+  let prevScrollPos = window.scrollY;
   window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.scrollY;
     if (prevScrollPos > currentScrollPos) {
       setBurgerIsVisible(true);
     } else {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from 'src/App';
-import 'src/services/i18n';
+import 'src/i18n';
 import 'src/index.css';
 import { Loader } from './components';
 

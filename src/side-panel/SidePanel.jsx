@@ -34,8 +34,6 @@ const SidePanel = () => {
     alink.click();
   };
 
-  console.log(t);
-
   return (
     <>
       <div
