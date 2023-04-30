@@ -107,7 +107,9 @@ const SidePanel = () => {
 
         {/* Languages */}
         <div className='w-full place-self-start'>
-          <h3 className='font-medium xl:text-lg dark:text-white '>Languages</h3>
+          <h3 className='font-medium xl:text-lg dark:text-white '>
+            {t('panel.languagesLabel')}
+          </h3>
           <ProgressBar
             title={t('panel.georgian')}
             progressTitle={t('panel.native')}
