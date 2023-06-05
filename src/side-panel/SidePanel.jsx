@@ -51,8 +51,8 @@ const SidePanel = () => {
         {t('panel.title')}
       </button>
       <div
-        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:p-8 xl:gap-3 xl:flex dark:bg-zinc-800 ${
-          panelIsOpen ? 'flex xl:w-2/12' : 'hidden'
+        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:w-[310px] xl:p-8 xl:gap-3 xl:flex dark:bg-zinc-800 ${
+          panelIsOpen ? 'flex' : 'hidden'
         }`}
       >
         <button
