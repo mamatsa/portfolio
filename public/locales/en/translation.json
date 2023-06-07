@@ -72,7 +72,6 @@
       "period": "2007 - 2019",
       "details": [
         "Awarded with gold medal for successful graduation.",
-        "Current GPA: 3.6",
         "Awarded with laptop after 9th grade for having high scores."
       ]
     }
@@ -130,5 +129,5 @@
     "success": "Message sent successfully!",
     "fail": "Failed!"
   },
-  "footerText": "The ned of the beginning"
+  "footerText": "The end of the beginning"
 }
