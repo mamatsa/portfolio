@@ -7,6 +7,7 @@ Welcome to my personal portfolio website! This website showcases my education, w
 - [Introduction](#introduction)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Project File Structure](#project-file-structure)
 - [Contact](#contact)
 
 ## Introduction
@@ -40,6 +41,47 @@ The portfolio website is built using the following technologies and tools:
 - react-hook-form
 - emailjs
 - i18next
+
+## Project File Structure
+
+This section provides an overview of the directory structure and key files in the project, helping you navigate through the code and understand its organization.
+
+```bash
+project-root/
+├── src/
+│   ├── assets/ # images
+│   │   ├── background/
+│   │   ├── logos/
+│   │   └── ...
+│   ├── components/ # shared components
+│   │   ├── Button.jsx
+│   │   ├── SectionTitle.jsx
+│   │   └── ...
+│   ├── sections/ # main sections of website
+│   │   ├── Banner/
+│   │   ├── TechStack/
+│   │   └── ...
+│   ├── side-panel/ # side panel component
+│   ├── navbar/ # navigation component
+│   ├── hooks/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   ├── i18n.js
+│   └── ...
+├── public/
+│   ├── locales/ # translation files
+│   |   ├── en/
+│   |   ├── ka/
+│   └── ...
+├── package.json
+├── index.html # application entry point
+├── README.md
+├── tailwind.config.js
+├── vite.config.js
+└── ...
+
+```
 
 ## Live Website
 
