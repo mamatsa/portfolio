@@ -71,8 +71,8 @@ project-root/
 │   └── ...
 ├── public/
 │   ├── locales/ # translation files
-│   |   ├── en/
-│   |   ├── ka/
+│   │   ├── en/
+│   │   ├── ka/
 │   └── ...
 ├── package.json
 ├── index.html # application entry point
