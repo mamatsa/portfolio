@@ -13,7 +13,7 @@ const Education = ({ educationRef, institutions }) => {
       ref={educationRef}
     >
       <SectionTitle title={t('education.title')} />
-      <div className='bg-white w-full p-6 sm:p-8 xl:p-16 dark:bg-zinc-800'>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-12 2xl:p-16 dark:bg-zinc-800'>
         {institutions.map((institution) => (
           <EducationItem
             key={institution.id}

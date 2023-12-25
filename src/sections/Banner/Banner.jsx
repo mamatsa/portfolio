@@ -14,10 +14,10 @@ const Banner = ({ homeRef }) => {
       ref={homeRef}
     >
       <div>
-        <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
+        <h2 className='text-2xl font-bold leading-snug md:text-4xl 2xl:text-5xl dark:text-white'>
           {t('banner.name')}
         </h2>
-        <h2 className='text-2xl font-bold leading-snug md:text-5xl dark:text-white'>
+        <h2 className='font-bold leading-snug text-2xl md:text-4xl 2xl:text-5xl dark:text-white'>
           <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
           {t('banner.profession')}
         </h2>

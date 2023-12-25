@@ -84,7 +84,7 @@ const Contact = ({ contactRef, messageSendHandler }) => {
 
           <button
             type='submit'
-            className='px-4 py-2 bg-amber-400 place-self-start mt-4 w-full md:w-auto'
+            className='px-4 py-2 bg-amber-400 place-self-start mt-4 w-full text-sm 2xl:text-base md:w-auto'
           >
             {t('contact.message.buttonText')}
           </button>

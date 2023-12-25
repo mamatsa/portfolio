@@ -57,13 +57,13 @@ function App() {
 
   return (
     <div
-      className={`bg-slate-200 h-full w-full flex justify-between items-stretch ${
+      className={`bg-slate-200 h-full w-full flex xl:grid xl:grid-cols-[210px_1fr_110px] 2xl:grid-cols-[280px_1fr_110px] ${
         darkModeOn && 'dark'
       }`}
     >
       <SidePanel />
 
-      <div className='relative h-full w-full bg-slate-200 xl:mr-28 xl:ml-72 xl:px-16 dark:bg-zinc-900'>
+      <div className='relative h-full w-full bg-slate-200 xl:px-16 dark:bg-zinc-900'>
         {successMessage && (
           <div className='sticky top-0 w-full z-20'>
             <p
@@ -82,6 +82,7 @@ function App() {
             />
           </div>
         )}
+
         <div className='space-y-20 sm:px-16 lg:space-y-32 xl:px-0 xl:space-y-40'>
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
@@ -95,7 +96,7 @@ function App() {
             contactRef={contactRef}
             messageSendHandler={messageSendHandler}
           />
-          <div className='w-full text py-3 bg-amber-400 flex justify-center items-center lg:text-xl'>
+          <div className='w-full text py-3 bg-amber-400 flex justify-center items-center 2xl:text-xl'>
             {t('footerText')}
           </div>
         </div>

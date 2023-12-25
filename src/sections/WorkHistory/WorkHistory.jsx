@@ -12,7 +12,7 @@ const WorkHistory = ({ workHistoryRef }) => {
       ref={workHistoryRef}
     >
       <SectionTitle title={t('work.title')} />
-      <div className='bg-white w-full p-6 sm:p-8 xl:p-16 dark:bg-zinc-800'>
+      <div className='bg-white w-full p-6 sm:p-8 xl:p-12 2xl:p-16 dark:bg-zinc-800'>
         <JobItem
           position={t('work.job1.position')}
           company={t('work.job1.company')}

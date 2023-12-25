@@ -10,10 +10,10 @@ const ContactCard = (props) => {
       />
       {props.contacts.map((contact, i) => (
         <div className='w-full flex justify-between items-center mb-3' key={i}>
-          <p className=' text-slate-600 lg:text-lg dark:text-white'>
+          <p className=' text-slate-600 text-sm 2xl:text-lg dark:text-white'>
             {contact.label}
           </p>
-          <p className='text-slate-600 text-sm lg:text-base dark:text-white'>
+          <p className='text-slate-600 text-sm 2xl:text-base dark:text-white'>
             {contact.value}
           </p>
         </div>

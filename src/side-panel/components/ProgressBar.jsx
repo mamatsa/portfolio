@@ -3,10 +3,10 @@ import React from 'react';
 const ProgressBar = (props) => {
   return (
     <div className='relative mt-2'>
-      <p className='text-gray-500 text-sm xl:text-base dark:text-zinc-400'>
+      <p className='text-gray-500 text-sm 2xl:text-base dark:text-zinc-400'>
         {props.title}
       </p>
-      <p className='absolute top-0 right-0 text-gray-500 text-sm xl:text-base dark:text-zinc-400'>
+      <p className='absolute top-0 right-0 text-gray-500 text-sm 2xl:text-base dark:text-zinc-400'>
         {props.progressTitle}
       </p>
       {/* Progressbar */}

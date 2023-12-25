@@ -6,7 +6,13 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 import { Button, SeparatorLine } from 'src/components';
-import { ProfilePicture, MediaLink, ProgressBar, Status } from './components';
+import {
+  ProfilePicture,
+  MediaLink,
+  ProgressBar,
+  Status,
+  Skill,
+} from './components';
 import { useTranslation } from 'react-i18next';
 
 const SidePanel = () => {
@@ -36,7 +42,7 @@ const SidePanel = () => {
   };
 
   return (
-    <>
+    <div>
       <div
         className={`fixed z-10 w-full h-full backdrop-blur-sm backdrop-brightness-75 ${
           !panelIsOpen && 'hidden'
@@ -52,7 +58,7 @@ const SidePanel = () => {
         {t('panel.title')}
       </button>
       <div
-        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:w-[310px] xl:p-8 xl:gap-3 xl:flex dark:bg-zinc-800 ${
+        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:flex 2xl:p-8 2xl:gap-3 dark:bg-zinc-800 ${
           panelIsOpen ? 'flex' : 'hidden'
         }`}
       >
@@ -64,19 +70,21 @@ const SidePanel = () => {
         >
           {t('panel.title')}
         </button>
+
+        {/* Profile Image */}
         <ProfilePicture />
 
         {/* Name, position */}
         <div className='flex flex-col items-center'>
-          <h3 className='font-medium text-amber-950 mb-1 xl:text-lg dark:text-white'>
+          <h3 className='font-medium text-amber-950 mb-1 2xl:text-lg dark:text-white'>
             {t('panel.name')}
           </h3>
-          <p className='text-xs text-gray-500 xl:text-sm'>
+          <p className='text-xs text-gray-500 2xl:text-sm'>
             {t('panel.profession')}
           </p>
 
           {/* Social links */}
-          <div className='flex gap-1 mt-1 xl:mt-4 xl:gap-3'>
+          <div className='flex gap-1 mt-1 2xl:mt-4 2xl:gap-3'>
             <MediaLink href='https://github.com/mamatsa' icon={faGithub} />
             <MediaLink
               href='https://www.linkedin.com/in/otar-mamatsashvili/'
@@ -106,7 +114,7 @@ const SidePanel = () => {
 
         {/* Languages */}
         <div className='w-full place-self-start'>
-          <h3 className='font-medium xl:text-lg dark:text-white '>
+          <h3 className='font-medium 2xl:text-lg dark:text-white '>
             {t('panel.languagesLabel')}
           </h3>
           <ProgressBar
@@ -125,13 +133,16 @@ const SidePanel = () => {
 
         {/* Skills */}
         <div className='w-full place-self-start'>
-          <h3 className='font-medium xl:text-lg dark:text-white '>
+          <h3 className='font-medium mb-2 2xl:text-lg dark:text-white '>
             {t('panel.skillsLabel')}
           </h3>
-          <ProgressBar title='HTML/CSS' progressTitle='90%' progress='90' />
-          <ProgressBar title='Javascript' progressTitle='80%' progress='80' />
-          <ProgressBar title='Typescript' progressTitle='70%' progress='70' />
-          <ProgressBar title='MongoDB' progressTitle='70%' progress='70' />
+          <div className='flex flex-wrap w-[200px] gap-1 text-xs 2xl:text-sm'>
+            <Skill title='HTML' />
+            <Skill title='CSS' />
+            <Skill title='JavaScript' />
+            <Skill title='TypeScript' />
+            <Skill title='React' />
+          </div>
         </div>
 
         <SeparatorLine />
@@ -144,7 +155,7 @@ const SidePanel = () => {
           small={true}
         />
       </div>
-    </>
+    </div>
   );
 };
 
