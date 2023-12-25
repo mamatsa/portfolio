@@ -25,7 +25,7 @@ const Projects = ({ projectsRef }) => {
         title={t('projects.title')}
         description={t('projects.description')}
       />
-      <div className='flex gap-[3%] overflow-x-scroll w-full md:flex-wrap md:gap-y-10 md:justify-center md:overflow-auto'>
+      <div className='ml-4 flex gap-[3%] overflow-x-scroll w-full md:flex-wrap md:gap-y-10 md:justify-center md:overflow-auto'>
         <Project
           image={FolksoulScreen}
           name='Folksoul'

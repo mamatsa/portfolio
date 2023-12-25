@@ -22,7 +22,7 @@ const LanguageChanger = (props) => {
 
   return (
     <div
-      className='flex bg-slate-200 cursor-pointer text-sm 2xl:text-base'
+      className='flex bg-slate-200 cursor-pointer text-sm md:hover:scale-105 2xl:text-base'
       onClick={languageChangeHandler}
     >
       <div

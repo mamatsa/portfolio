@@ -7,7 +7,9 @@ const SectionTitle = (props) => {
         {props.title}
       </h2>
       {props.description && (
-        <p className='text-slate-400 md:text-lg'> {props.description}</p>
+        <p className='text-slate-400 text-center md:text-lg'>
+          {props.description}
+        </p>
       )}
     </div>
   );

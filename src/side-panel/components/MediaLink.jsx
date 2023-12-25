@@ -11,7 +11,7 @@ const MediaLink = (props) => {
       <FontAwesomeIcon
         icon={props.icon}
         size='xl'
-        className='bg-amber-400 p-2 rounded-full'
+        className='bg-amber-400 p-2 rounded-full md:hover:bg-amber-300'
       />
     </a>
   );

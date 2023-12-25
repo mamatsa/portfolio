@@ -10,7 +10,7 @@ const Banner = ({ homeRef }) => {
   return (
     <section
       id='home'
-      className='banner bg-white flex justify-between items-center px-6 pt-12 pb-12 md:px-12 2xl:px-16 lg:pb-0 lg:pt-6 dark:bg-zinc-800'
+      className='banner bg-white flex justify-between items-center px-6 py-20 md:px-12 2xl:px-16 lg:pb-0 lg:pt-6 dark:bg-zinc-800'
       ref={homeRef}
     >
       <div>
@@ -21,9 +21,11 @@ const Banner = ({ homeRef }) => {
           <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
           {t('banner.profession')}
         </h2>
-        <p className='text-gray-400 my-6 2xl:w-3/5'>{t('banner.about')}</p>
+        <p className='text-gray-400 my-4 md:my-6 2xl:w-3/5'>
+          {t('banner.about')}
+        </p>
         <a href='#contact'>
-          <Button text={t('banner.contact')} hre icon={faArrowRight} />
+          <Button text={t('banner.contact')} icon={faArrowRight} />
         </a>
       </div>
       <img src={BannerPhoto} alt='banner-image' className='hidden lg:block' />

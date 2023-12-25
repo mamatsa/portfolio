@@ -24,18 +24,6 @@ const Navbar = ({
   darkModeOn,
 }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
-  const [burgerIsVisible, setBurgerIsVisible] = useState(true);
-
-  let prevScrollPos = window.scrollY;
-  window.onscroll = function () {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollPos > currentScrollPos) {
-      setBurgerIsVisible(true);
-    } else {
-      setBurgerIsVisible();
-    }
-    prevScrollPos = currentScrollPos;
-  };
 
   return (
     <>
@@ -51,8 +39,7 @@ const Navbar = ({
         {/* Burger Menu Icon */}
         <FontAwesomeIcon
           icon={faBars}
-          className='fixed top-5 right-2 text-amber-400 bg-slate-100 p-4 rounded-full w-5 h-5 cursor-pointer xl:hidden'
-          style={{ top: burgerIsVisible ? '10px' : '-100px' }}
+          className='fixed top-5 right-2 text-amber-400 bg-slate-100 p-4 rounded-full w-5 h-5 cursor-pointer xl:hidden dark:bg-zinc-600'
           onClick={() => setNavIsOpen(true)}
         />
 
@@ -65,7 +52,7 @@ const Navbar = ({
           <FontAwesomeIcon
             icon={darkModeOn ? faMoon : faSun}
             size='xl'
-            className='cursor-pointer dark:text-white'
+            className='cursor-pointer md:hover:scale-110 dark:text-white'
             onClick={darkModeToggle}
           />
 

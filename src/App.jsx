@@ -83,7 +83,7 @@ function App() {
           </div>
         )}
 
-        <div className='space-y-20 sm:px-16 lg:space-y-32 xl:px-0 xl:space-y-40'>
+        <div className='space-y-20 sm:px-16 lg:space-y-32 xl:px-0 2xl:space-y-40'>
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
           <WorkHistory workHistoryRef={workHistoryRef} />

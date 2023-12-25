@@ -136,7 +136,7 @@ const SidePanel = () => {
           <h3 className='font-medium mb-2 2xl:text-lg dark:text-white '>
             {t('panel.skillsLabel')}
           </h3>
-          <div className='flex flex-wrap w-[200px] gap-1 text-xs 2xl:text-sm'>
+          <div className='flex flex-wrap w-[200px] gap-1 text-xs 2xl:w-[220px] 2xl:text-sm'>
             <Skill title='HTML' />
             <Skill title='CSS' />
             <Skill title='JavaScript' />
