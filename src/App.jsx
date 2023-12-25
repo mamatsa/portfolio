@@ -86,7 +86,10 @@ function App() {
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
           <WorkHistory workHistoryRef={workHistoryRef} />
-          <Education educationRef={educationRef} />
+          <Education
+            educationRef={educationRef}
+            institutions={t('education.institutions')}
+          />
           <Projects projectsRef={projectsRef} />
           <Contact
             contactRef={contactRef}

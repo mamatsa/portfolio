@@ -19,7 +19,7 @@
     "name": "I'm Otar Mamatsashvili",
     "role": "Front-End",
     "profession": "Developer",
-    "about": "I am junior developer and information technology student with experience of working with various projects. Including real-world production ready applications and studying ones.",
+    "about": "Hello and thank you for visiting my portfolio website. Dive into a space that reflects my professional journey, showcases my expertise, and invites you to get in touch if you find my work compelling. ",
     "contact": "Contact Me"
   },
   "techStack": {
@@ -54,27 +54,39 @@
   },
   "education": {
     "title": "Education",
-    "school1": {
-      "title": "BACHELOR OF ENGINEERING IN INFORMATICS",
-      "school": "BTU",
-      "place": "Tbilisi",
-      "period": "Apr 2022 - Sep 2022",
-      "details": [
-        "Learning with a 100% scholarship.",
-        "Current GPA: 3.6",
-        "Important courses covered: Calculus, Data structures and algorithms, HTML/CSS & Javascript, React, Linux, UX/UI, English B2 and C1 levels."
-      ]
-    },
-    "school2": {
-      "title": "School Graduate",
-      "school": "N2 Public School",
-      "place": "Kaspi",
-      "period": "2007 - 2019",
-      "details": [
-        "Awarded with gold medal for successful graduation.",
-        "Awarded with laptop after 9th grade for having high scores."
-      ]
-    }
+    "institutions": [
+      {
+        "id": 3,
+        "title": "Information Systems Management - DevOps",
+        "school": "BTU",
+        "place": "Tbilisi",
+        "period": "2023 - 2025",
+        "details": ["Enrolled with a 100% scholarship."]
+      },
+      {
+        "id": 2,
+        "title": "BACHELOR OF ENGINEERING IN INFORMATICS",
+        "school": "BTU",
+        "place": "Tbilisi",
+        "period": "2019 - 2023",
+        "details": [
+          "Enrolled with a 100% scholarship.",
+          "Awarded a diploma with honors, graduating with a final GPA of 3.55.",
+          "Important courses covered: Calculus, Data structures and algorithms, HTML/CSS & Javascript, React, Linux, UX/UI, English B2 and C1 levels."
+        ]
+      },
+      {
+        "id": 1,
+        "title": "School Graduate",
+        "school": "N2 Public School",
+        "place": "Kaspi",
+        "period": "2007 - 2019",
+        "details": [
+          "Awarded with gold medal for successful graduation.",
+          "Earned a laptop in 9th grade for top grades in all subjects."
+        ]
+      }
+    ]
   },
   "projects": {
     "title": "Projects",

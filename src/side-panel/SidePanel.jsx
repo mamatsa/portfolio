@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 const SidePanel = () => {
   const { i18n, t } = useTranslation();
   const [panelIsOpen, setPanelIsOpen] = useState(false);
+  const age = new Date().getFullYear() - 2001;
 
   const resumeDownloadHandler = async () => {
     let response;
@@ -92,7 +93,7 @@ const SidePanel = () => {
 
         {/* Personal info */}
         <div className='w-full flex flex-col gap-2'>
-          <Status label={t('panel.ageLabel')} value='21' />
+          <Status label={t('panel.ageLabel')} value={age} />
           <Status label={t('panel.addressLabel')} value={t('panel.address')} />
           <Status
             label={t('panel.statusLabel')}

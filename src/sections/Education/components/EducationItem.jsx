@@ -42,6 +42,8 @@ const EducationItem = (props) => {
           </li>
         ))}
       </ul>
+
+      {props.title !== 'School Graduate' && <hr className='my-5 lg:my-10' />}
     </div>
   );
 };
