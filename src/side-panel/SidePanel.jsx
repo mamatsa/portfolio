@@ -43,27 +43,32 @@ const SidePanel = () => {
 
   return (
     <div>
+      {/* Backdrop */}
       <div
-        className={`fixed z-10 w-full h-lvh backdrop-blur-sm backdrop-brightness-75 ${
+        className={`fixed z-10 w-full h-lvh backdrop-blur-sm backdrop-brightness-75 xl:hidden ${
           !panelIsOpen && 'hidden'
         }`}
         onClick={() => setPanelIsOpen(false)}
       ></div>
+
+      {/* Button for opening pannel on mobile viewport */}
       <button
-        className={`fixed z-30 bottom-[20%] -left-14 rotate-90 bg-amber-200 px-4 py-2 text-sm font-light rounded-t-xl border-[1px] border-amber-400 xl:hidden ${
+        className={`fixed z-30 bottom-[30%] left-0 origin-bottom-left rotate-90 bg-amber-200 px-4 pb-1 pt-2 text-sm font-light rounded-t-xl border-[1px] border-amber-400 xl:hidden ${
           panelIsOpen && 'hidden'
         }`}
         onClick={() => setPanelIsOpen(true)}
       >
         {t('panel.title')}
       </button>
+
       <div
         className={`fixed z-20 h-dvh bg-white flex-col items-center justify-between p-4 gap-2 xl:flex 2xl:p-8 2xl:gap-3 dark:bg-zinc-800 ${
           panelIsOpen ? 'flex' : 'hidden'
         }`}
       >
+        {/* Button for closing pannel on mobile viewport */}
         <button
-          className={`absolute z-30 bottom-[20%] -right-[90px] rotate-90 bg-amber-400 px-4 py-2 text-sm font-light rounded-t-xl   xl:hidden ${
+          className={`h-[36px] absolute bottom-[5%] -right-[37px] origin-top-right rotate-90 bg-amber-400 px-4 py-2 text-sm font-light rounded-t-xl xl:hidden ${
             !panelIsOpen && 'hidden'
           }`}
           onClick={() => setPanelIsOpen(false)}

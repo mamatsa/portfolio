@@ -33,7 +33,7 @@ const Navbar = ({
     <>
       {/* Backdrop */}
       <div
-        className={`fixed w-full h-lvh backdrop-blur-sm backdrop-brightness-75 ${
+        className={`fixed w-full h-lvh backdrop-blur-sm backdrop-brightness-75 xl:hidden ${
           !navIsOpen && 'hidden'
         }`}
         onClick={() => setNavIsOpen(false)}
