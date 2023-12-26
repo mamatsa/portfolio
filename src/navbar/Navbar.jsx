@@ -25,6 +25,10 @@ const Navbar = ({
 }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
+  const handleNavigationClose = () => {
+    setNavIsOpen(false);
+  };
+
   return (
     <>
       {/* Backdrop */}
@@ -61,31 +65,37 @@ const Navbar = ({
               href='#home'
               icon={faHouse}
               isInViewport={homeIsInViewport}
+              onChoose={handleNavigationClose}
             />
             <NavItem
               href='#tech-stack'
               icon={faLayerGroup}
               isInViewport={techStackIsInViewport && !homeIsInViewport}
+              onChoose={handleNavigationClose}
             />
             <NavItem
               href='#work-history'
               icon={faBriefcase}
               isInViewport={workHistoryIsInViewport && !techStackIsInViewport}
+              onChoose={handleNavigationClose}
             />
             <NavItem
               href='#education'
               icon={faUserGraduate}
               isInViewport={educationIsInViewport && !workHistoryIsInViewport}
+              onChoose={handleNavigationClose}
             />
             <NavItem
               href='#projects'
               icon={faFeatherPointed}
               isInViewport={projectsIsInViewport && !educationIsInViewport}
+              onChoose={handleNavigationClose}
             />
             <NavItem
               href='#contact'
               icon={faMessage}
               isInViewport={contactIsInViewport && !projectsIsInViewport}
+              onChoose={handleNavigationClose}
             />
           </nav>
           <LanguageChanger />
