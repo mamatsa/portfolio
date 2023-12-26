@@ -28,29 +28,33 @@
   },
   "work": {
     "title": "Work History",
-    "job1": {
-      "position": "Full Stack Developer Intern",
-      "company": "Redberry",
-      "location": "Tbilisi",
-      "period": "Apr 2022 - Sep 2022",
-      "workHours": "Full Time",
-      "details": [
-        "Learned programming principles and new emerging technologies.",
-        "Created several production-ready applications with fluency in modern front-end and back-end frameworks.",
-        "Worked under the mentorship of experienced web developers."
-      ]
-    },
-    "job2": {
-      "position": "Junior Front End Developer",
-      "company": "DLS",
-      "location": "Remote",
-      "period": "Jan 2022 - Mar 2022",
-      "workHours": "Full Time",
-      "details": [
-        "Coded using HTML, CSS and JavaScript to create responsive pages and components for the company website.",
-        "Worked cooperatively in a team with business people, designers and developers in a deadline-driven environment."
-      ]
-    }
+    "jobs": [
+      {
+        "id": 2,
+        "position": "Full Stack Developer Intern",
+        "company": "Redberry",
+        "location": "Tbilisi",
+        "period": "Apr 2022 - Sep 2022",
+        "workHours": "Full Time",
+        "details": [
+          "Learned programming principles and new emerging technologies.",
+          "Created several production-ready applications with fluency in modern front-end and back-end frameworks.",
+          "Worked under the mentorship of experienced web developers."
+        ]
+      },
+      {
+        "id": 1,
+        "position": "Junior Front End Developer",
+        "company": "DLS",
+        "location": "Remote",
+        "period": "Jan 2022 - Mar 2022",
+        "workHours": "Full Time",
+        "details": [
+          "Coded using HTML, CSS and JavaScript to create responsive pages and components for the company website.",
+          "Worked cooperatively in a team with business people, designers and developers in a deadline-driven environment."
+        ]
+      }
+    ]
   },
   "education": {
     "title": "Education",

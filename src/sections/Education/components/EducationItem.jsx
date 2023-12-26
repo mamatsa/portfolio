@@ -8,7 +8,7 @@ import {
 
 const EducationItem = (props) => {
   return (
-    <div className='w-full'>
+    <div className='w-full group'>
       <div className='flex justify-between items-center'>
         <h3 className='mb-1 text-lg md:text-xl 2xl:text-2xl dark:text-white'>
           {props.title}
@@ -41,7 +41,7 @@ const EducationItem = (props) => {
         ))}
       </ul>
 
-      {props.title !== 'School Graduate' && <hr className='my-5 lg:my-10' />}
+      <hr className='my-5 lg:my-8 2xl:my-10 group-last:hidden' />
     </div>
   );
 };

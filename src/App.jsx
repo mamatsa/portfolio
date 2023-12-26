@@ -86,7 +86,7 @@ function App() {
         <div className='space-y-20 sm:px-16 lg:space-y-32 xl:px-0 2xl:space-y-40'>
           <Banner homeRef={homeRef} />
           <TechStack techStackRef={techStackRef} />
-          <WorkHistory workHistoryRef={workHistoryRef} />
+          <WorkHistory workHistoryRef={workHistoryRef} jobs={t('work.jobs')} />
           <Education
             educationRef={educationRef}
             institutions={t('education.institutions')}

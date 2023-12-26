@@ -8,7 +8,7 @@ import {
 
 const JobItem = (props) => {
   return (
-    <div className='w-full'>
+    <div className='w-full group'>
       <div className='flex justify-between items-center'>
         <h3 className='mb-1 text-lg md:text-xl 2xl:text-2xl dark:text-white'>
           {props.position}
@@ -45,6 +45,8 @@ const JobItem = (props) => {
           </li>
         ))}
       </ul>
+
+      <hr className='my-5 lg:my-8 2xl:my-10 group-last:hidden' />
     </div>
   );
 };
