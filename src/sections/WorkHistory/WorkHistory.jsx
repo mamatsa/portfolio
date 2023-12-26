@@ -15,6 +15,7 @@ const WorkHistory = ({ workHistoryRef, jobs }) => {
       <div className='bg-white w-full p-6 sm:p-8 xl:p-12 2xl:p-16 dark:bg-zinc-800'>
         {jobs.map((job) => (
           <JobItem
+            key={job.id}
             position={job.position}
             company={job.company}
             location={job.location}

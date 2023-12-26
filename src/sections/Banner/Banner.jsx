@@ -17,10 +17,12 @@ const Banner = ({ homeRef }) => {
         <h2 className='text-2xl font-bold leading-snug md:text-4xl 2xl:text-5xl dark:text-white'>
           {t('banner.name')}
         </h2>
-        <h2 className='font-bold leading-snug text-2xl md:text-4xl 2xl:text-5xl dark:text-white'>
-          <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
-          {t('banner.profession')}
-        </h2>
+        <div className='w-min'>
+          <h2 className='w-min animate-typing overflow-hidden whitespace-nowrap border-r-2 border-r-amber-400 font-bold leading-snug text-2xl md:border-r-4 md:text-4xl 2xl:text-5xl dark:text-white'>
+            <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
+            {t('banner.profession')}
+          </h2>
+        </div>
         <p className='text-gray-400 my-4 md:my-6 2xl:w-3/5'>
           {t('banner.about')}
         </p>
