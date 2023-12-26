@@ -15,7 +15,7 @@ const Project = ({
   const { t } = useTranslation();
 
   return (
-    <div className='bg-white rounded-lg shadow-md w-2/3 md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
+    <div className='bg-white rounded-lg shadow-md md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
       <img src={image} alt='name' className='w-full rounded-t-lg' />
       <div className='flex flex-col h-full justify-between p-3 md:p-8'>
         <h3 className='w-28 text-center text-lg mb-3 mx-6 whitespace-nowrap md:text-start md:w-auto 2xl:text-2xl md:mb-4 md:mx-0 dark:text-white'>
