@@ -44,7 +44,7 @@ const SidePanel = () => {
   return (
     <div>
       <div
-        className={`fixed z-10 w-full h-full backdrop-blur-sm backdrop-brightness-75 ${
+        className={`fixed z-10 w-full h-lvh backdrop-blur-sm backdrop-brightness-75 ${
           !panelIsOpen && 'hidden'
         }`}
         onClick={() => setPanelIsOpen(false)}
@@ -58,7 +58,7 @@ const SidePanel = () => {
         {t('panel.title')}
       </button>
       <div
-        className={`fixed z-20 h-full bg-white flex-col items-center justify-between p-4 gap-2 xl:flex 2xl:p-8 2xl:gap-3 dark:bg-zinc-800 ${
+        className={`fixed z-20 h-dvh bg-white flex-col items-center justify-between p-4 gap-2 xl:flex 2xl:p-8 2xl:gap-3 dark:bg-zinc-800 ${
           panelIsOpen ? 'flex' : 'hidden'
         }`}
       >

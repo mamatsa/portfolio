@@ -33,7 +33,7 @@ const Navbar = ({
     <>
       {/* Backdrop */}
       <div
-        className={`fixed w-full h-full backdrop-blur-sm backdrop-brightness-75 ${
+        className={`fixed w-full h-lvh backdrop-blur-sm backdrop-brightness-75 ${
           !navIsOpen && 'hidden'
         }`}
         onClick={() => setNavIsOpen(false)}
@@ -49,7 +49,7 @@ const Navbar = ({
 
         {/* Navbar */}
         <div
-          className={`fixed right-0 top-0 h-full px-9 bg-slate-100  flex-col items-center justify-between py-10 dark:bg-neutral-800 ${
+          className={`fixed right-0 top-0 h-dvh px-9 bg-slate-100  flex-col items-center justify-between py-10 dark:bg-neutral-800 ${
             navIsOpen ? 'flex' : 'hidden xl:flex'
           }`}
         >
