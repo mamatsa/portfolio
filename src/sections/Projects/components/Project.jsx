@@ -17,20 +17,25 @@ const Project = ({
   return (
     <div className='bg-white rounded-lg shadow-md md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
       <img src={image} alt='name' className='w-full rounded-t-lg' />
-      <div className='flex flex-col h-full justify-between p-3 md:p-8'>
-        <h3 className='w-28 text-center text-lg mb-3 mx-6 whitespace-nowrap md:text-start md:w-auto 2xl:text-2xl md:mb-4 md:mx-0 dark:text-white'>
+      <div className='flex flex-col space-y-2 h-full justify-between p-3 md:p-5 md:space-y-3 xl:space-y-5 2xl:p-8'>
+        {/* Name */}
+        <h3 className='w-28 text-center text-lg mx-6 whitespace-nowrap md:text-start md:w-auto 2xl:text-2xl md:mx-0 dark:text-white'>
           {name}
         </h3>
-        <p className='font-light text-sm mb-3 2xl:mb-5 2xl:text-lg dark:text-white'>
+        {/* Description */}
+        <p className='font-light text-sm 2xl:text-lg dark:text-white'>
           {description}
         </p>
+        {/* Tech Stack */}
         <p className='text-sm 2xl:text-base dark:text-white'>
           {t('projects.techStack')}:{' '}
           <span className='text-xs font-light 2xl:text-sm dark:text-white'>
             {techStack}
           </span>
         </p>
-        <div className='flex items-center justify-between mt-3 xl:mt-5'>
+
+        <div className='flex items-center justify-between'>
+          {/* Source Code */}
           <a
             href={githubLink}
             target='_blank'
@@ -44,6 +49,7 @@ const Project = ({
               {t('projects.viewCode')}
             </p>
           </a>
+          {/* Live URL */}
           <a
             href={siteLink}
             target='_blank'

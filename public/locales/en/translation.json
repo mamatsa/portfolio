@@ -98,14 +98,53 @@
     "techStack": "Tech Stack",
     "viewCode": "View Code",
     "livePreview": "Live Preview",
-    "description1": "FolkSoul is a music band website, where you can view information about the band and its members. Only authenticated admins can modify this information.",
-    "description2": "Backend API for folksoul application, where information is stored and retrieved from mongo database.",
-    "description3": "Coronatime is a  website where you can register/login and then view covid statistics by country or worldwide summed up data.",
-    "description4": "This is covid questionnaire for company employees where they fill in data of their covid related information.",
-    "description5": "This is a survey created for Redberry(Georgian Tech Company) internship program. Here you answer questions about you.",
-    "description6": "Company backend API, where you can read, add, update and delete information about companies and employees.",
-    "description7": "Simple todo list where you can save todos, mark them completed and delete useless ones.",
-    "description8": "Tribute page for Aleksandre Kartvelishvili, Georgian aircraft designer. One page application with simple styling and parallax scrolling."
+    "examples": [
+      {
+        "id": 1,
+        "name": "Dictionary web app",
+        "imgSource": "src/assets/project-screens/dictionary-screen.webp",
+        "description": "Dictionary that allows users to look up meanings, examples, opposites, synonyms, and phonetics for English words. It also includes the option to switch between dark and light themes, as well as choose from different application fonts.",
+        "techStack": "React, Typescript, Tailwind, HeadlessUI, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/11-dictionary-web-app",
+        "siteLink": "https://11-dictionary-web-app.vercel.app/"
+      },
+      {
+        "id": 2,
+        "name": "Todo app",
+        "imgSource": "src/assets/project-screens/todo-screen.webp",
+        "description": "The todo list app allows users to add, mark as completed, and delete tasks. It also features filters for viewing completed or active tasks and enables easy reordering through drag-and-drop functionality. Also, the application offers dark and light themes for user preference.",
+        "techStack": "React, Typescript, Tailwind, React Beautiful DnD, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/10-todo-app",
+        "siteLink": "https://10-todo-app.vercel.app/"
+      },
+      {
+        "id": 3,
+        "name": "FrontEnd quiz app",
+        "imgSource": "src/assets/project-screens/quiz-screen.webp",
+        "description": "Application is designed to allow users to select a specific topic related to frontend development, answer 10 targeted questions on the chosen subject, and subsequently view their quiz results. In addition, the app is responsive and features dark and light themes.",
+        "techStack": "React, Typescript, Tailwind, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/09-frontend-quiz-app",
+        "siteLink": "https://09-frontend-quiz-app.vercel.app/"
+      },
+      {
+        "id": 4,
+        "name": "Multi-step form",
+        "imgSource": "src/assets/project-screens/formapp-screen.webp",
+        "description": "The multi-step form application guides users through entering personal details, subscription choices, add-ons, and reviewing all information provided. The fully responsive design ensures an optimal experience across devices.",
+        "techStack": "React, Typescript, Tailwind, Headless UI, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/08-multi-step-form",
+        "siteLink": "https://08-multi-step-form.vercel.app/"
+      },
+      {
+        "id": 5,
+        "name": "URL Shortener",
+        "imgSource": "src/assets/project-screens/shortly-screen.webp",
+        "description": "The URL shortener landing page enables users to paste a website URL and obtain a shortened link, which redirects to the original website. The application is fully responsive.",
+        "techStack": "React, JavaScript, Module CSS, Axios, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/06-url-shortener",
+        "siteLink": "https://06-url-shortener.vercel.app/"
+      }
+    ]
   },
   "contact": {
     "message": {

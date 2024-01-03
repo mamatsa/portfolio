@@ -98,14 +98,53 @@
     "techStack": "ტექნოლოგიები",
     "viewCode": "კოდი",
     "livePreview": "საიტი",
-    "description1": "FolkSoul არის მუსიკალური ბენდის ვებსაიტი, სადაც შეგიძლია ნახო ინფორმაცია ბენდსა და მის წევრებზე. ავტორიზებულ ადმინებს კი შეუძლიათ ამ ინფორმაციის შეცვლა.",
-    "description2": "ბექენდ API აპლიკაცია Folksoul-ისთვის, რომლის დახმარებითაც ინახება და იცვლება ინფორმაცია MongoDB მონაცემთა ბაზაში.",
-    "description3": "Coronatime არის ვებსაიტი, სადაც შეგიძლია გაიარო ავტორიზაცია/რეგისტრაცია და ნახო კოვიდ სტატისტიკა მსოფლიოს მაშტაბით ჯამში ან ქვეყნების მიხედვით.",
-    "description4": "კოვიდ კითხვარი კომპანიის თანამშრომლებისთვის, სადაც მათ შეყავთ კორონა ვირუსთან დაკავშირებული პირადი მონაცემები.",
-    "description5": "გამოკითხვა, რომელიც შეიქმნა კომპანია Redberry-ის ინტერნშიპ პროგრამისთვის. აპლიკაციაში პასუხს სცემ კითხვებს საკუთარ თავზე.",
-    "description6": "კომპანიის ბექენდ API, სადაც შესაძლებელია კომპანიისა და თანამშრომლების შესახებ ინფორმაციის წაკითხვა, დამატება, შეცვლა და წაშლა.",
-    "description7": "მარტივი todo ტიპის აპლიკაცია, რომელშიც შეგიძლია შეინახო გასაკეთებელი საქმეების სია, მონიშნო ისინი შესრულებულად და წაშალო სურვილის შემთხვევაში.",
-    "description8": "გამოჩენილი ქართველი თვითმფრინავების კონსტრუქტორის, ალექსანდრე ქართველიშვილის ხსოვნისადმი მიძღვნილი მარტივი ვებგვერდი."
+    "examples": [
+      {
+        "id": 1,
+        "name": "Dictionary web app",
+        "imgSource": "src/assets/project-screens/dictionary-screen.webp",
+        "description": "ლექსიკონი, სადაც მომხმარებელს შეუძლია მოძებნოს სხვადასხვა ინგლისური სიტყვის მნიშვნელობა, მისი გამოყენების მაგალითები, იხილოს სინონიმები, ანტონიმები და მოისმინოს ჟღერადობა. ასევე შესაძლებელია აპლიკაციის ფერებისა და ფონტის ცვლილება.",
+        "techStack": "React, Typescript, Tailwind, HeadlessUI, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/11-dictionary-web-app",
+        "siteLink": "https://11-dictionary-web-app.vercel.app/"
+      },
+      {
+        "id": 2,
+        "name": "Todo app",
+        "imgSource": "src/assets/project-screens/todo-screen.webp",
+        "description": "აპლიკაცია სადაც შესაცლებელია Todo სიის შექმნა, ელემენტების დამატება, მათი შესრულებულად მონიშვნა, თანმიმდევრობის შეცვლა, წაშლა და ფილტრაცია. აპლიკაციას ასევე გააჩნია ღია და მუქი თემების მხარდაჭერა.",
+        "techStack": "React, Typescript, Tailwind, React Beautiful DnD, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/10-todo-app",
+        "siteLink": "https://10-todo-app.vercel.app/"
+      },
+      {
+        "id": 3,
+        "name": "FrontEnd quiz app",
+        "imgSource": "src/assets/project-screens/quiz-screen.webp",
+        "description": "ქვიზ აპლიკაცია, სადაც მომხმარებლებს შეუძლიათ აირჩიონ FrontEnd დეველოპმენტთან დაკავშირებული რომელიმე თემა, უპასუხონ შესაბამის კითხვებს და იხილონ სწორი პასუხების რაოდენობა. აპლიკაცია არის responsive, ასევე გააჩნია ღია და მუქი თემები.",
+        "techStack": "React, Typescript, Tailwind, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/09-frontend-quiz-app",
+        "siteLink": "https://09-frontend-quiz-app.vercel.app/"
+      },
+      {
+        "id": 4,
+        "name": "Multi-step form",
+        "imgSource": "src/assets/project-screens/formapp-screen.webp",
+        "description": "მრავალ ნაბიჯიანი ფორმა, სადაც მომხმარებლებს შეყავთ პირადი ინფორმაცია, ირჩევენ გამოწერის ვარიანტს, დამატებით სერვისებს, საბოლოოდ კი შეუძლიათ მიწოდებული ინფორმაციის გადახედვა და სურვლის შემთხვევაში შეცვლა.",
+        "techStack": "React, Typescript, Tailwind, Headless UI, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/08-multi-step-form",
+        "siteLink": "https://08-multi-step-form.vercel.app/"
+      },
+      {
+        "id": 5,
+        "name": "URL Shortener",
+        "imgSource": "src/assets/project-screens/shortly-screen.webp",
+        "description": "ვებსაიტის მისამართის შემმოკლებელი აპლიკაცია, რომელიც სასურველი მისამართის მიწოდების შემთხვევაში აბრუნებს, ამავე ვებსაიტის შემოკლებულ მისამართს.",
+        "techStack": "React, JavaScript, Module CSS, Axios, Vite",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/06-url-shortener",
+        "siteLink": "https://06-url-shortener.vercel.app/"
+      }
+    ]
   },
   "contact": {
     "message": {

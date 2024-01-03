@@ -91,7 +91,10 @@ function App() {
             educationRef={educationRef}
             institutions={t('education.institutions')}
           />
-          <Projects projectsRef={projectsRef} />
+          <Projects
+            projectsRef={projectsRef}
+            projectExamples={t('projects.examples')}
+          />
           <Contact
             contactRef={contactRef}
             messageSendHandler={messageSendHandler}
