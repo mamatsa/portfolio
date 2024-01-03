@@ -1,5 +1,4 @@
 import React from 'react';
-import { BannerPhoto } from 'src/assets';
 import { Button } from 'src/components';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
@@ -30,7 +29,11 @@ const Banner = ({ homeRef }) => {
           <Button text={t('banner.contact')} icon={faArrowRight} />
         </a>
       </div>
-      <img src={BannerPhoto} alt='banner-image' className='hidden lg:block' />
+      <img
+        src='/assets/banner-photo.webp'
+        alt='banner-image'
+        className='hidden lg:block'
+      />
     </section>
   );
 };

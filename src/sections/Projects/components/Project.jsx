@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 
 const Project = ({
-  image,
+  imgSource,
   name,
   description,
   techStack,
@@ -16,7 +16,7 @@ const Project = ({
 
   return (
     <div className='bg-white rounded-lg shadow-md md:w-[31%] dark:bg-zinc-800 flex flex-col justify-between'>
-      <img src={image} alt='name' className='w-full rounded-t-lg' />
+      <img src={imgSource} alt='name' className='w-full rounded-t-lg' />
       <div className='flex flex-col space-y-2 h-full justify-between p-3 md:p-5 md:space-y-3 xl:space-y-5 2xl:p-8'>
         {/* Name */}
         <h3 className='w-28 text-center text-lg mx-6 whitespace-nowrap md:text-start md:w-auto 2xl:text-2xl md:mx-0 dark:text-white'>

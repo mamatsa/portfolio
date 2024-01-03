@@ -1,22 +1,4 @@
 import React from 'react';
-import {
-  ReactLogo,
-  JSLogo,
-  TSLogo,
-  HTMLLogo,
-  CSSLogo,
-  NodeLogo,
-  TailwindLogo,
-  LinuxLogo,
-  FigmaLogo,
-  MongoLogo,
-  VscodeLogo,
-  ExpressLogo,
-  GitLogo,
-  GithubLogo,
-  CypressLogo,
-  SwaggerLogo,
-} from 'src/assets';
 import { SectionTitle } from 'src/components';
 import { StackItem } from './components';
 import { useTranslation } from 'react-i18next';
@@ -37,75 +19,83 @@ const TechStack = ({ techStackRef }) => {
       <div className='flex flex-wrap justify-center items-center gap-6'>
         <StackItem
           title='HTML'
-          logo={HTMLLogo}
+          logo='/assets/logos/html-logo.webp'
           link='https://developer.mozilla.org/en-US/docs/Web/HTML'
         />
         <StackItem
           title='CSS'
-          logo={CSSLogo}
+          logo='/assets/logos/css-logo.webp'
           link='https://developer.mozilla.org/en-US/docs/Web/CSS'
         />
         <StackItem
           title='JavaScript'
-          logo={JSLogo}
+          logo='/assets/logos/js-logo.webp'
           link='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
         />
         <StackItem
           title='TypeScript'
-          logo={TSLogo}
+          logo='/assets/logos/ts-logo.webp'
           link='https://www.typescriptlang.org/'
         />
-        <StackItem title='React' logo={ReactLogo} link='https://react.dev/' />
+        <StackItem
+          title='React'
+          logo='/assets/logos/react-logo.webp'
+          link='https://react.dev/'
+        />
         <StackItem
           title='NodeJS'
-          logo={NodeLogo}
+          logo='/assets/logos/node-logo.webp'
           link='https://nodejs.org/en'
         />
         <StackItem
           title='Express'
-          logo={ExpressLogo}
+          logo='/assets/logos/express-logo.webp'
           link='https://expressjs.com/'
         />
         <StackItem
           title='MongoDB'
-          logo={MongoLogo}
+          logo='/assets/logos/mongo-logo.webp'
           link='https://www.mongodb.com/'
         />
 
         <StackItem
           title='TailwindCSS'
-          logo={TailwindLogo}
+          logo='/assets/logos/tailwind-logo.webp'
           link='https://tailwindcss.com/'
         />
-        <StackItem title='Git' logo={GitLogo} link='https://git-scm.com/' />
+        <StackItem
+          title='Git'
+          logo='/assets/logos/git-logo.webp'
+          link='https://git-scm.com/'
+        />
         <StackItem
           title='Github'
-          logo={GithubLogo}
+          logo='/assets/logos/github-logo.webp'
           link='https://github.com/'
         />
         <StackItem
           title='Linux'
-          logo={LinuxLogo}
+          logo='/assets/logos/linux-logo.webp'
           link='https://www.linux.org/'
         />
         <StackItem
           title='VSCode'
-          logo={VscodeLogo}
+          logo='/assets/logos/vscode-logo.webp'
           link='https://code.visualstudio.com/'
         />
         <StackItem
           title='Figma'
-          logo={FigmaLogo}
+          logo='/assets/logos/figma-logo.webp'
           link='https://www.figma.com/'
         />
         <StackItem
           title='Swagger'
-          logo={SwaggerLogo}
+          logo='/assets/logos/swagger-logo.webp'
           link='https://swagger.io/'
         />
         <StackItem
           title='Cypress'
-          logo={CypressLogo}
+          logo='/assets/logos/cypress-logo.webp'
           link='https://www.cypress.io/'
         />
       </div>

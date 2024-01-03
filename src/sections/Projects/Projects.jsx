@@ -19,7 +19,7 @@ const Projects = ({ projectsRef, projectExamples }) => {
         {projectExamples.map((project) => (
           <Project
             key={project.id}
-            image={project.imgSource}
+            imgSource={project.imgSource}
             name={project.name}
             description={project.description}
             techStack={project.techStack}

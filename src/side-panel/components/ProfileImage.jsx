@@ -1,11 +1,10 @@
 import React from 'react';
-import { ProfilePhoto } from 'src/assets';
 
 const ProfileImage = () => {
   return (
     <div className='relative'>
       <img
-        src={ProfilePhoto}
+        src='/assets/profile-photo.webp'
         alt='Image'
         className='rounded-full w-24 2xl:w-[150px]'
       />
