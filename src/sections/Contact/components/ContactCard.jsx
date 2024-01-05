@@ -9,7 +9,10 @@ const ContactCard = (props) => {
         className='mr-2 bg-amber-400 p-4 rounded-full mb-3 scale-75 md:mb-7 md:scale-100'
       />
       {props.contacts.map((contact, i) => (
-        <div className='w-full flex justify-between items-center mb-3' key={i}>
+        <div
+          className='w-full flex justify-between flex-wrap items-center mb-3'
+          key={i}
+        >
           <p className=' text-slate-600 text-sm 2xl:text-lg dark:text-white'>
             {contact.label}
           </p>
