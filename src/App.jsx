@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import Navbar from 'src/navbar';
 import SidePanel from 'src/side-panel';
 import {
@@ -9,7 +9,7 @@ import {
   Projects,
   Contact,
 } from 'src/sections';
-import { useIsInViewport } from 'src/hooks';
+import { useIsInViewport, useDarkMode } from 'src/hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
@@ -17,22 +17,7 @@ import { useTranslation } from 'react-i18next';
 function App() {
   const { t } = useTranslation();
   const [successMessage, setSuccessMessage] = useState('');
-  const [darkModeOn, setDarkModeOn] = useState(false);
-
-  useEffect(() => {
-    if (localStorage.getItem('darkMode')) {
-      setDarkModeOn(true);
-    }
-  }, []);
-
-  const darkModeToggle = () => {
-    if (darkModeOn) {
-      localStorage.removeItem('darkMode');
-    } else {
-      localStorage.setItem('darkMode', 'on');
-    }
-    setDarkModeOn((prevState) => !prevState);
-  };
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   const messageSendHandler = (success) => {
     if (success) {
@@ -41,6 +26,7 @@ function App() {
       setSuccessMessage('fail');
     }
   };
+
   const homeRef = useRef(null);
   const techStackRef = useRef(null);
   const workHistoryRef = useRef(null);
@@ -58,7 +44,7 @@ function App() {
   return (
     <div
       className={`bg-slate-200 h-full w-full flex xl:grid xl:grid-cols-[210px_1fr_110px] 2xl:grid-cols-[280px_1fr_110px] ${
-        darkModeOn && 'dark'
+        darkMode && 'dark'
       }`}
     >
       <SidePanel />
@@ -112,8 +98,8 @@ function App() {
         educationIsInViewport={educationIsInViewport}
         projectsIsInViewport={projectsIsInViewport}
         contactIsInViewport={contactIsInViewport}
-        darkModeToggle={darkModeToggle}
-        darkModeOn={darkModeOn}
+        onDarkModeToggle={toggleDarkMode}
+        darkModeOn={darkMode}
       />
     </div>
   );

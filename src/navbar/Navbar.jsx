@@ -20,8 +20,8 @@ const Navbar = ({
   educationIsInViewport,
   contactIsInViewport,
   projectsIsInViewport,
-  darkModeToggle,
-  darkModeOn,
+  onDarkModeToggle,
+  darkMode,
 }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
@@ -54,10 +54,10 @@ const Navbar = ({
           }`}
         >
           <FontAwesomeIcon
-            icon={darkModeOn ? faMoon : faSun}
+            icon={darkMode ? faMoon : faSun}
             size='xl'
             className='cursor-pointer md:hover:scale-110 dark:text-white'
-            onClick={darkModeToggle}
+            onClick={onDarkModeToggle}
           />
 
           <nav className='flex flex-col items-center justify center gap-4 2xl:gap-6'>
