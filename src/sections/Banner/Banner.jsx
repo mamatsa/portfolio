@@ -17,7 +17,7 @@ const Banner = ({ homeRef }) => {
           {t('banner.name')}
         </h2>
         <div className='w-min'>
-          <h2 className='w-min animate-typing overflow-hidden whitespace-nowrap border-r-2 border-r-amber-400 font-bold leading-snug text-2xl md:border-r-4 md:text-4xl 2xl:text-5xl dark:text-white'>
+          <h2 className='w-min animate-typing pb-1 overflow-hidden whitespace-nowrap border-r-2 border-r-amber-400 font-bold leading-snug text-2xl md:border-r-4 md:text-4xl 2xl:text-5xl dark:text-white'>
             <span className=' text-amber-400'>{t('banner.role')}</span>{' '}
             {t('banner.profession')}
           </h2>
