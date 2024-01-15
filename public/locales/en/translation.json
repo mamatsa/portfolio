@@ -100,7 +100,16 @@
     "livePreview": "Live Preview",
     "examples": [
       {
-        "id": 1,
+        "id": 6,
+        "name": "Countries app",
+        "imgSource": "/assets/project-screens/countries-screen.webp",
+        "description": "Application which is showcasing country cards with essential details and expanded views for comprehensive insights. It also lets users search individual country, or filter countries by region. The app includes customizable dark and light themes for user preference.",
+        "techStack": "Next.js, Typescript, Tailwind, daisyUI, next-themes",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/12-countries-app",
+        "siteLink": "https://12-countries-app.vercel.app/"
+      },
+      {
+        "id": 5,
         "name": "Dictionary web app",
         "imgSource": "/assets/project-screens/dictionary-screen.webp",
         "description": "Dictionary that allows users to look up meanings, examples, opposites, synonyms, and phonetics for English words. It also includes the option to switch between dark and light themes, as well as choose from different application fonts.",
@@ -109,7 +118,7 @@
         "siteLink": "https://11-dictionary-web-app.vercel.app/"
       },
       {
-        "id": 2,
+        "id": 4,
         "name": "Todo app",
         "imgSource": "/assets/project-screens/todo-screen.webp",
         "description": "The todo list app allows users to add, mark as completed, and delete tasks. It also features filters for viewing completed or active tasks and enables easy reordering through drag-and-drop functionality. Also, the application offers dark and light themes for user preference.",
@@ -127,7 +136,7 @@
         "siteLink": "https://09-frontend-quiz-app.vercel.app/"
       },
       {
-        "id": 4,
+        "id": 2,
         "name": "Multi-step form",
         "imgSource": "/assets/project-screens/formapp-screen.webp",
         "description": "The multi-step form application guides users through entering personal details, subscription choices, add-ons, and reviewing all information provided. The fully responsive design ensures an optimal experience across devices.",
@@ -136,7 +145,7 @@
         "siteLink": "https://08-multi-step-form.vercel.app/"
       },
       {
-        "id": 5,
+        "id": 1,
         "name": "URL Shortener",
         "imgSource": "/assets/project-screens/shortly-screen.webp",
         "description": "The URL shortener landing page enables users to paste a website URL and obtain a shortened link, which redirects to the original website. The application is fully responsive.",

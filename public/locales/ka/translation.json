@@ -100,7 +100,16 @@
     "livePreview": "საიტი",
     "examples": [
       {
-        "id": 1,
+        "id": 6,
+        "name": "Countries app",
+        "imgSource": "/assets/project-screens/countries-screen.webp",
+        "description": "ვებსაიტი რომელიც აჩვენებს ქვეყნებს და ინფორმაციას მათ შესახებ. სასურველი ქვეყნის მარტივად საპოვნელად მომხმარებელს შეუძლია საძიებო ველისა და რეგიონალური ფილტრის გამოყენება. აპლიკაციას გააჩნია მუქი და ღია თემების მხარდაჭერა.",
+        "techStack": "Next.js, Typescript, Tailwind, daisyUI, next-themes",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/12-countries-app",
+        "siteLink": "https://12-countries-app.vercel.app/"
+      },
+      {
+        "id": 5,
         "name": "Dictionary web app",
         "imgSource": "/assets/project-screens/dictionary-screen.webp",
         "description": "ლექსიკონი, სადაც მომხმარებელს შეუძლია მოძებნოს სხვადასხვა ინგლისური სიტყვის მნიშვნელობა, მისი გამოყენების მაგალითები, იხილოს სინონიმები, ანტონიმები და მოისმინოს ჟღერადობა. ასევე შესაძლებელია აპლიკაციის ფერებისა და ფონტის ცვლილება.",
@@ -109,7 +118,7 @@
         "siteLink": "https://11-dictionary-web-app.vercel.app/"
       },
       {
-        "id": 2,
+        "id": 4,
         "name": "Todo app",
         "imgSource": "/assets/project-screens/todo-screen.webp",
         "description": "აპლიკაცია სადაც შესაცლებელია Todo სიის შექმნა, ელემენტების დამატება, მათი შესრულებულად მონიშვნა, თანმიმდევრობის შეცვლა, წაშლა და ფილტრაცია. აპლიკაციას ასევე გააჩნია ღია და მუქი თემების მხარდაჭერა.",
@@ -127,7 +136,7 @@
         "siteLink": "https://09-frontend-quiz-app.vercel.app/"
       },
       {
-        "id": 4,
+        "id": 2,
         "name": "Multi-step form",
         "imgSource": "/assets/project-screens/formapp-screen.webp",
         "description": "მრავალ ნაბიჯიანი ფორმა, სადაც მომხმარებლებს შეყავთ პირადი ინფორმაცია, ირჩევენ გამოწერის ვარიანტს, დამატებით სერვისებს, საბოლოოდ კი შეუძლიათ მიწოდებული ინფორმაციის გადახედვა და სურვლის შემთხვევაში შეცვლა.",
@@ -136,7 +145,7 @@
         "siteLink": "https://08-multi-step-form.vercel.app/"
       },
       {
-        "id": 5,
+        "id": 1,
         "name": "URL Shortener",
         "imgSource": "/assets/project-screens/shortly-screen.webp",
         "description": "ვებსაიტის მისამართის შემმოკლებელი აპლიკაცია, რომელიც სასურველი მისამართის მიწოდების შემთხვევაში აბრუნებს, ამავე ვებსაიტის შემოკლებულ მისამართს.",
