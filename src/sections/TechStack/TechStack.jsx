@@ -43,6 +43,11 @@ const TechStack = ({ techStackRef }) => {
           link='https://react.dev/'
         />
         <StackItem
+          title='Next.js'
+          logo='/assets/logos/next-js.svg'
+          link='https://nextjs.org/'
+        />
+        <StackItem
           title='NodeJS'
           logo='/assets/logos/node-logo.webp'
           link='https://nodejs.org/en'
