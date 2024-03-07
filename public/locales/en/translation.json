@@ -100,13 +100,22 @@
     "livePreview": "Live Preview",
     "examples": [
       {
-        "id": 6,
+        "id": 7,
         "name": "Countries app",
         "imgSource": "/assets/project-screens/countries-screen.webp",
         "description": "Application which is showcasing country cards with essential details and expanded views for comprehensive insights. It also lets users search individual country, or filter countries by region. The app includes customizable dark and light themes for user preference.",
         "techStack": "Next.js, Typescript, Tailwind, daisyUI, next-themes",
         "githubLink": "https://github.com/mamatsa/small-projects/tree/main/12-countries-app",
         "siteLink": "https://12-countries-app.vercel.app/"
+      },
+      {
+        "id": 6,
+        "name": "Planets fact site",
+        "imgSource": "/assets/project-screens/planets-screen.webp",
+        "description": "Website where visitors can view basic descriptions and interesting facts about planets in the solar system. The website is fully responsive, adjusting its design according to the device screen size.",
+        "techStack": "Next.js, Typescript, Tailwind",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/13-planets-fact-site",
+        "siteLink": "https://13-planets-fact-site.vercel.app/"
       },
       {
         "id": 5,

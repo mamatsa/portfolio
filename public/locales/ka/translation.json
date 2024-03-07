@@ -100,13 +100,22 @@
     "livePreview": "საიტი",
     "examples": [
       {
-        "id": 6,
+        "id": 7,
         "name": "Countries app",
         "imgSource": "/assets/project-screens/countries-screen.webp",
         "description": "ვებსაიტი რომელიც აჩვენებს ქვეყნებს და ინფორმაციას მათ შესახებ. სასურველი ქვეყნის მარტივად საპოვნელად მომხმარებელს შეუძლია საძიებო ველისა და რეგიონალური ფილტრის გამოყენება. აპლიკაციას გააჩნია მუქი და ღია თემების მხარდაჭერა.",
         "techStack": "Next.js, Typescript, Tailwind, daisyUI, next-themes",
         "githubLink": "https://github.com/mamatsa/small-projects/tree/main/12-countries-app",
         "siteLink": "https://12-countries-app.vercel.app/"
+      },
+      {
+        "id": 6,
+        "name": "Planets fact site",
+        "imgSource": "/assets/project-screens/planets-screen.webp",
+        "description": "საიტი, სადაც ვიზიტორებს შეუძლიათ იხილონ ძირითადი ინფორმაცია და საინტერესო ფაქტები მზის სისტემაში შემავალი პლანეტების შესახებ. აპლიკაციის დიზაინი იცვლება მოწყობილობის ეკრანის ზომიდან გამომდინარე და ერგება მომხმარებლის საჭიროებას. ",
+        "techStack": "Next.js, Typescript, Tailwind",
+        "githubLink": "https://github.com/mamatsa/small-projects/tree/main/13-planets-fact-site",
+        "siteLink": "https://13-planets-fact-site.vercel.app/"
       },
       {
         "id": 5,
